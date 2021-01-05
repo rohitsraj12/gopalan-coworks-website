@@ -75,6 +75,40 @@ $(document).ready(function(){
         }
     }
     });
+
+    
+    var $owl = $('.section__testimonial .owl-carousel');
+
+    $owl.children().each( function( index ) {
+      $(this).attr( 'data-position', index ); // NB: .attr() instead of .data()
+    });
+
+    $owl.owlCarousel({
+      // center: true,
+      loop: true,
+      items: 3,
+      autoplay: true,
+      autoplayTimeout: 3000,
+      autoplayHoverPause: true,
+
+        dots: true,
+      // autoplayHoverPause: true,
+        nav: true,
+        navText: ["<i class='fa fa-angle-left'></i>","<i class='fa fa-angle-right'></i>"],
+      responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:1
+        },
+        1000:{
+            items:1
+        },
+
+    }
+    });
+
     $(document).on('click', '.owl-item>div', function() {
       // see https://owlcarousel2.github.io/OwlCarousel2/docs/api-events.html#to-owl-carousel
       var $speed = 300;  // in ms
