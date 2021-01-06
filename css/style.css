@@ -976,6 +976,16 @@ border-bottom: 1px solid #5f5f5f;
   #contact form page
 
 ===============================================*/
+.section__body p{
+  color: #8b8b8b;
+
+}
+
+/* ===========================================
+
+  #contact form page
+
+===============================================*/
 
 .section__contact .section__body{
   padding: 0 30px 30px;
