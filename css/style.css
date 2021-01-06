@@ -145,6 +145,16 @@ a:hover {
   background-color: #111111;
 
 }
+
+.primary__link {
+  color: var(--color-theme);
+  transition: 300ms;
+}
+
+  .primary__link:hover {
+  opacity: 0.7;
+  color: var(--color-theme);
+}
 /* ===============================
 
     body header section 
@@ -898,8 +908,6 @@ a:hover {
     padding: 30px 0 0;
 }
 
-
-
 .section__safety .section__header, .section__brand-list .section__header {
   text-align: center;
   font-size: 1.5rem;
@@ -963,6 +971,74 @@ border-bottom: 1px solid #5f5f5f;
 
 }
 
+/* ===========================================
+
+  #contact form page
+
+===============================================*/
+
+.section__contact .section__body{
+  padding: 0 30px 30px;
+  background-color: #111111;
+  border-radius: 10px;
+  border: 2px solid #1f1f1f;
+}
+
+.section__locations {
+  padding: 20px;
+  margin: 0 auto;
+}
+.section__locations h2{
+  text-align: center;
+  font-size: 20px;
+  color: #e2e2e2;
+  font-weight: 400;
+}
+
+.contact__location header {
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #1a1a1a;
+}
+
+.contact__location address {
+  font-size: 1rem;
+  color: #8b8b8b;
+}
+
+.contact__location ul {
+  margin-top: 10px;
+  padding-top: 15px;
+  border-top: 1px solid #1a1a1a;
+}
+
+.contact__location ul li {
+  padding-left: 20px;
+  padding-bottom: 5px;
+}
+
+.contact__location {
+  padding: 30px 30px;
+  width: 350px;
+  border: 1px solid #1f1f1f;
+  background-color: #111111;
+  border-radius: 6px;
+}
+
+.contact__name {
+  color: rgb(177, 177, 177);
+  font-weight: 500;
+}
+
+.contact__link {
+  color: var(--color-theme);
+  transition: 300ms;
+}
+
+.contact__link:hover {
+  color: var(--color-theme);
+  opacity: 0.7;
+}
 
 @media (max-width: 768px) {
   .py-60 {
