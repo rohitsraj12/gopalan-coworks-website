@@ -5,6 +5,7 @@ if(isset($_POST['email'])){
     $user_phone = $_POST['phone'];
     $user_email = $_POST['email'];
     $user_location = $_POST['location'];
+    $num_of_seat = $_POST['seats'];
 
     // $to = "degitalmarketing@gopalanenterprises.com";
     $to = "marketing@gopalancoworks.com";
@@ -14,6 +15,7 @@ if(isset($_POST['email'])){
     $message .= "<p> phone number: <strong>". $user_phone ."</strong></p></br>";
     $message .= "<p> email: <strong>". $user_email ."</strong></p></br>";
     $message .= "<p> Selected project: <strong>". $user_location ."</strong></p></br>";
+    $message .= "<p> Number of seats required: <strong>". $num_of_seat ."</strong></p></br>";
     $message .= "<p>Thank you,</p>";
     $message .= "<p>". $user_name ."</p>";
     $message .= "<p>" . $user_email . " | " . $user_phone . "</p>";
