@@ -95,6 +95,15 @@ a:hover {
   color: var(--color-text-2);
 }
 
+.section__header-secondary {
+  font-family: "Rubik", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 400;
+  text-transform: capitalize;
+  position: relative;
+  color: #dadada;
+}
+
 .section__header::after {
   content: "";
   width: 50px;
@@ -949,11 +958,11 @@ border-bottom: 1px solid #5f5f5f;
   color: rgb(204, 204, 204);
 }
 
-.section__safety .section__body ul li::after{
+/* .section__safety .section__body ul li::after{
   content: "|";
   margin: 0 10px;
   color:#818181;
-}
+} */
 
 .section__safety .section__body ul li:last-child::after{
   content: "";
@@ -969,6 +978,52 @@ border-bottom: 1px solid #5f5f5f;
 .section__safety .primary-btn {
   background-color: var(--color-theme);
 
+}
+
+
+/* ===========================================
+
+  #website home page
+
+===============================================*/
+
+
+
+/*  #website home page about us section and why us section
+
+===============================================*/
+.why__us li {
+  padding-left: 30px;
+  position: relative;
+}
+
+.why__us li::before {
+  content: "\f058";
+  font-family: 'FontAwesome';
+  font-size: 1.2rem;
+  color: var(--color-theme);
+  position:absolute;
+  top: 0;
+  left: 0;
+}
+
+.why__us li header {
+  font-family: var(--font-primary);
+  font-size: 1.2rem;
+  color: rgb(184, 184, 184);
+}
+
+.about__home-location {
+  padding: 15px 0;
+  border-top: 1px solid #2c2c2c;
+  border-bottom: 1px solid #2c2c2c;
+}
+
+.heading__list {
+  font-family: var(--font-primary);
+  font-size: 1rem;
+  font-weight: 400;
+  color:rgb(151, 151, 151)
 }
 
 /* ===========================================
@@ -1169,6 +1224,20 @@ border-bottom: 1px solid #5f5f5f;
 
   .m-banner-image {
     display: none;
+  }
+
+  
+  .about__home-location {
+    margin-top: 40px;
+  }
+
+  .about__home-location ul {
+    display: flex;
+    justify-content: center;
+  }
+
+  .about__home-location ul li + li{
+    margin-left: 40px;
   }
 }
 
