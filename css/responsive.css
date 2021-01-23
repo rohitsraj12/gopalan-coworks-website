@@ -171,14 +171,29 @@
       position: fixed;
       top: 0;
     }
+
+    .section__safety ul li + li {
+      margin-left: 20px;
+    }
   }
 
 @media (min-width: 992px) {
+  .p-bottom{
+    padding-top: 150px;
+  }
+
   /* banner section */
   .body__banner {
   }
 
   .body__banner img {
     height: 100vh;
+  }
+  
+  /* section banner */
+  .banner__form {
+    width: 100%;
+    position: absolute;
+    bottom: -150px;
   }
 }
