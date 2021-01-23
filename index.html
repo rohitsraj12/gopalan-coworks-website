@@ -119,72 +119,69 @@
                 </div>
 
                 <div class="banner__form py-4 ">
-                    <div class="banner__form-wrap container">
-                        <form action="form_1.php" method="POST">
-                            <div class="row">
-                                <div class="col-12 col-sm-4 col-md-4">
-                                    <div class="form-group">
-                                        <label class="text-light" for="name">Name</label>
-                                        <input type="text" class="form-control" name="name" placeholder="Your name" id="name" aria-describedby="emailHelp">
+                    <div class="container">
+                        <div class="banner__form-wrap container">
+                            <form action="form_1.php" method="POST">
+                                <div class="row">
+                                    <div class="col-12 col-sm-4 col-md-4">
+                                        <div class="form-group">
+                                            <label class="text-light" for="name">Name</label>
+                                            <input type="text" class="form-control" name="name" placeholder="Your name" id="name" aria-describedby="emailHelp">
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-4 col-md-4">
+                                        <div class="form-group">
+                                            <label class="text-light" for="tel">Mobile number</label>
+                                            <input type="tel" class="form-control" name="phone"  id="tel" placeholder="Your mobile" aria-describedby="emailHelp">
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-4 col-md-4">
+                                        <div class="form-group">
+                                            <label class="text-light" for="email">Email address</label>
+                                            <input type="email" class="form-control" name="email"  id="email"  placeholder="Your email" aria-describedby="emailHelp">
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-4 col-md-4">
+                                        <div class="form-group">
+                                            <label class="text-light" for="email">Your Location</label>
+                                            <select name="location" class="form-control" id="exampleFormControlSelect1">
+                                                <option>Select Your Locaton</option>
+                                                <option value="Banashankari" >Banashankari</option>
+                                                <option value="Bannerghatta road">Bannerghatta Road</option>
+                                                <option value="Brooke Field">Brookefield</option>
+                                                <option value="Commercial Street">Commercial Street</option>
+                                                <option value="Old Madras Road">Old Madras Road</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-4 col-md-4">
+                                        <div class="form-group">
+                                            <label class="text-light" for="company">Company Name</label>
+                                            <input type="text" class="form-control" name="company"  id="company"  placeholder="Your company name" aria-describedby="emailHelp">
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-4 col-md-4">
+                                        <div class="form-group">
+                                            <label class="text-light" for="seats">Number Of Seats</label>
+                                            <select name="seats" class="form-control" id="seats">
+                                                <option>Select Number of Seats</option>
+                                                <option value="1-5" >01 - 05 Seats</option>
+                                                <option value="6-15">06 - 15 Seats</option>
+                                                <option value="16-25">16 - 25 Seats</option>
+                                                <option value="26-50">26 - 50 Seats</option>
+                                                <option value="51+">51 + Seats</option>
+                                            </select>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="col-12 col-sm-4 col-md-4">
-                                    <div class="form-group">
-                                        <label class="text-light" for="tel">Mobile number</label>
-                                        <input type="tel" class="form-control" name="phone"  id="tel" placeholder="Your mobile" aria-describedby="emailHelp">
-                                    </div>
+                                
+                                <div class="text-center">
+                                    <input type="submit" class="primary-btn-secondary">
                                 </div>
-                                <div class="col-12 col-sm-4 col-md-4">
-                                    <div class="form-group">
-                                        <label class="text-light" for="email">Email address</label>
-                                        <input type="email" class="form-control" name="email"  id="email"  placeholder="Your email" aria-describedby="emailHelp">
-                                    </div>
-                                </div>
-                                <div class="col-12 col-sm-4 col-md-4">
-                                    <div class="form-group">
-                                        <label class="text-light" for="email">Your Location</label>
-                                        <select name="location" class="form-control" id="exampleFormControlSelect1">
-                                            <option>Select Your Locaton</option>
-                                            <option value="Banashankari" >Banashankari</option>
-                                            <option value="Bannerghatta road">Bannerghatta Road</option>
-                                            <option value="Brooke Field">Brookefield</option>
-                                            <option value="Commercial Street">Commercial Street</option>
-                                            <option value="Old Madras Road">Old Madras Road</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-sm-4 col-md-4">
-                                    <div class="form-group">
-                                        <label class="text-light" for="company">Company Name</label>
-                                        <input type="text" class="form-control" name="company"  id="company"  placeholder="Your company name" aria-describedby="emailHelp">
-                                    </div>
-                                </div>
-                                <div class="col-12 col-sm-4 col-md-4">
-                                    <div class="form-group">
-                                        <label class="text-light" for="seats">Number Of Seats</label>
-                                        <select name="seats" class="form-control" id="seats">
-                                            <option>Select Number of Seats</option>
-                                            <option value="1-5" >01 - 05 Seats</option>
-                                            <option value="6-15">06 - 15 Seats</option>
-                                            <option value="16-25">16 - 25 Seats</option>
-                                            <option value="26-50">26 - 50 Seats</option>
-                                            <option value="51+">51 + Seats</option>
-                                        </select>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            
-                            
-                            
-                            
-                            
-                            <div class="text-center">
-                            <input type="submit" class="primary-btn">
-            
-                            </div>
-                        </form>
-                    </div> 
+                            </form>
+                        </div> 
+                    </div>
+
                 </div>
 
             </div>
@@ -193,7 +190,7 @@
             <div class="body__container">
                 <main>
 
-                    <section class="section__safety py-60" id="safety">
+                    <section class="section__safety py-60 p-bottom" id="safety">
                         <div class="container">
                             <div class="pb-35 pt-5">
                                 <h2 class="section__header">
@@ -759,7 +756,7 @@
                             <div class="section__body">
                                 <div class="row">
                                     <div class="col-sm-3 text-center">
-                                            <article class="space__block" data-toggle="modal" data-target="#general">
+                                            <article class="space__block">
                                                 <header class="space__header">
                                                     <h2 class="text__header">
                                                         Flexible Desk
@@ -780,16 +777,16 @@
                                                         </div>
 
                                                     <div class="buton">
-                                                        <span class="btn__primary">
+                                                        <button class="primary-btn-secondary-border"  data-toggle="modal" data-target="#general">
                                                             get quote
-                                                        </span>
+                                                        </button>
 
                                                     </div>
                                                 </footer>
 
                                             </article>
                                     </div>
-                                    <div class="col-sm-3 text-center" data-toggle="modal" data-target="#general">
+                                    <div class="col-sm-3 text-center">
                                         <article class="space__block">
                                             <header class="space__header">
                                                 <h2 class="text__header">
@@ -811,16 +808,16 @@
                                                 </div>
 
                                                 <div class="buton">
-                                                    <span class="btn__primary">
+                                                    <button class="primary-btn-secondary-border"  data-toggle="modal" data-target="#general">
                                                         get quote
-                                                    </span>
+                                                    </button>
 
                                                 </div>
                                             </footer>
 
                                         </article>
                                     </div>
-                                    <div class="col-sm-3 text-center" data-toggle="modal" data-target="#general">
+                                    <div class="col-sm-3 text-center">
                                         <article class="space__block">
                                             <header class="space__header">
                                                 <h2 class="text__header">
@@ -842,16 +839,16 @@
 
                                                 </div>
                                                 <div class="buton">
-                                                    <span class="btn__primary">
+                                                    <button class="primary-btn-secondary-border"  data-toggle="modal" data-target="#general">
                                                         get quote
-                                                    </span>
+                                                    </button>
 
                                                 </div>
                                             </footer>
 
                                         </article>
                                     </div>
-                                    <div class="col-sm-3 text-center" data-toggle="modal" data-target="#general">
+                                    <div class="col-sm-3 text-center">
                                         <article class="space__block">
                                             <header class="space__header">
                                                 <h2 class="text__header">
@@ -875,9 +872,9 @@
 
                                                 </div>
                                                 <div class="buton">
-                                                    <span class="btn__primary">
+                                                    <button class="primary-btn-secondary-border"  data-toggle="modal" data-target="#general">
                                                         get quote
-                                                    </span>
+                                                    </button>
 
                                                 </div>
                                             </footer>
