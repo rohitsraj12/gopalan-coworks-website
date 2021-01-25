@@ -186,8 +186,13 @@
   .body__banner {
   }
 
-  .body__banner img {
+  .full__banner img {
     height: 100vh;
+  }
+  
+  .half__banner img {
+    height: 550px;
+
   }
   
   /* section banner */
