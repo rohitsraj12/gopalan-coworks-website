@@ -56,6 +56,12 @@ a:hover {
   text-decoration: none;
 }
 
+p {
+  
+  font-family: var(--font-primary);
+  font-weight: 300;
+}
+
 /* default styling */
 .py-60 {
   padding: 60px 0;
@@ -90,7 +96,7 @@ a:hover {
   font-family: "Rubik", sans-serif;
   font-size: 18px;
   font-weight: 300;
-  text-transform: lowercase;
+  /* text-transform: lowercase; */
   position: relative;
   color: var(--color-text-2);
 }
@@ -114,8 +120,23 @@ a:hover {
   left: 48%;
 }
 
+.location__header-top {
+  padding-bottom: 6px;
+  font-family: var(--font-primary);
+  font-size: 2.2rem;
+  font-weight: 300;
+  color: #dadada;
+}
+
+.location__header-bottom {
+  font-family: var(--font-primary);
+  font-size: 1.4rem;
+  font-weight: 100;
+  color: #bbbbbb;
+}
+
 .primary-btn {
-  /* background-color: var(--color-theme); */
+  font-family: var(--font-primary);
   background-color: #111111;
   color: var(--color-text-1);
   border: none;
@@ -141,7 +162,7 @@ a:hover {
 } 
 
 .primary-btn-secondary:hover {
- background-color: rgb(255, 72, 0);
+  background-color: rgb(255, 72, 0);
 }
 
 
@@ -196,7 +217,7 @@ a:hover {
   transition: 300ms;
 }
 
-  .primary__link:hover {
+.primary__link:hover {
   opacity: 0.7;
   color: var(--color-theme);
 }
@@ -281,11 +302,18 @@ a:hover {
   left: 0;
 }
 
-.top__social-media ul {
+.full__banner .top__social-media ul {
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.half__banner .top__social-media ul {
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 .top__social-media li {
@@ -1030,6 +1058,45 @@ border-bottom: 1px solid #5f5f5f;
 ===============================================*/
 
 
+
+/* ===========================================
+
+  #website location page
+
+===============================================*/
+
+.location__contact{
+  padding: 10px 0 15px;
+}
+
+.location__contact li {
+  color:rgb(110, 110, 110);
+  padding-bottom: 5px;
+}
+
+
+.location__contact li .data {
+  color:rgb(248, 248, 248);
+  /* font-weight: 500; */
+}
+
+.location__detail{
+  padding: 20px;
+  border-top: 1px solid rgb(43, 43, 43);
+  border-bottom: 1px solid rgb(43, 43, 43);
+  text-align: center;
+}
+
+.location__detail span i {
+  padding-right: 5px;
+  color:rgb(110, 110, 110);
+
+}
+
+.location__detail span {
+  color:rgb(184, 184, 184);
+  font-weight: 400;
+}
 
 /*  #website home page about us section and why us section
 
