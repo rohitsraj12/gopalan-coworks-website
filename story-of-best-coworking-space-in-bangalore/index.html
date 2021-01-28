@@ -306,26 +306,26 @@
                       </button>
                     </div>
                     <div class="modal-body">
-                        <form action="form_1.php" method="POST" class="banner__form w-100 py-0 px-2">
+                        <form action="form_1.php" method="POST" class="banner__form w-100 py-0 px-2" onsubmit="return validate_form()">
                             <!-- <header class="text-center h4 pb-3">
                             Enquire Form
                             </header> -->
                             <div class="form-group">
                             <label for="name">Name</label>
-                            <input type="text" class="form-control" name="name" placeholder="Your name" id="name" aria-describedby="emailHelp">
-                            </div>
+                            <input type="text" class="form-control" name="name" placeholder="Your name" id="name" aria-describedby="emailHelp" required>
+                            </div> 
                             <div class="form-group">
                             <label for="tel">Mobile no</label>
-                            <input type="tel" class="form-control" name="phone"  id="tel" placeholder="Your mobile" aria-describedby="emailHelp">
+                            <input type="tel" class="form-control" name="phone"  id="tel" placeholder="Your mobile" aria-describedby="emailHelp" required>
                             </div>
                             <div class="form-group">
                                 <label for="email">Email address</label>
-                                <input type="email" class="form-control" name="email"  id="email"  placeholder="Your email" aria-describedby="emailHelp">
+                                <input type="email" class="form-control" name="email"  id="email"  placeholder="Your email" aria-describedby="emailHelp" required>
                             </div>
                             <div class="form-group">
                                 <label for="email">Your Location</label>
-                                <select name="location" class="form-control" id="exampleFormControlSelect1">
-                                    <option>Select Your Locaton</option>
+                                <select name="location" class="form-control" id="exampleFormControlSelect1" required>
+                                    <option value="">Select Your Locaton</option>
                                     <option value="Banashankari" >Banashankari</option>
                                     <option value="Bannerghatta road">Bannerghatta Road</option>
                                     <option value="Brooke Field">Brookefield</option>
@@ -336,13 +336,13 @@
                             
                             <div class="form-group">
                                 <label for="company">Company Name</label>
-                                <input type="text" class="form-control" name="company"  id="company"  placeholder="Your Company Name" aria-describedby="emailHelp">
+                                <input type="text" class="form-control" name="company"  id="company"  placeholder="Your Company Name" aria-describedby="emailHelp" required>
                             </div>
                             
                             <div class="form-group">
                                 <label for="seats">Number Of Seats</label>
-                                <select name="seats" class="form-control" id="seats">
-                                    <option>Select Number of Seats</option>
+                                <select name="seats" class="form-control" id="seats" required>
+                                    <option value="">Select Number of Seats</option>
                                     <option value="1-5" >01 - 05 Seats</option>
                                     <option value="6-15">06 - 15 Seats</option>
                                     <option value="16-25">16 - 25 Seats</option>
@@ -356,7 +356,6 @@
                             </div>
                         </form>
                     </div>
-                    
                   </div>
                 </div>
               </div>
