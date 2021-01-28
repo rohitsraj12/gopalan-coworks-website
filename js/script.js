@@ -116,11 +116,4 @@ $(document).ready(function(){
     });
 
 
-
-    var exitmessage = 'Please dont go!'; //custome message
-    DisplayExit = function() {
-              return exitmessage;
-    };
-
-    window.onbeforeunload = DisplayExit;
 })
