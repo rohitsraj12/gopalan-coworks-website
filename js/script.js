@@ -114,4 +114,13 @@ $(document).ready(function(){
       var $speed = 300;  // in ms
       $owl.trigger('to.owl.carousel', [$(this).data( 'position' ), $speed] );
     });
+
+
+
+    var exitmessage = 'Please dont go!'; //custome message
+    DisplayExit = function() {
+              return exitmessage;
+    };
+
+    window.onbeforeunload = DisplayExit;
 })
