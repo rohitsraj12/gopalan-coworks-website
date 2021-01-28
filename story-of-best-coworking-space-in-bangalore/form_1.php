@@ -12,9 +12,9 @@ if(isset($_POST['email'])){
     $to = "marketing@gopalancoworks.com";
     $subject = "Our Story Gopalan Coworks";
     $message = "<p>Enquiry</p></br>";
-    $message .= "<p> name: <strong>". $user_name ."</strong></p></br>";
-    $message .= "<p> phone number: <strong>". $user_phone ."</strong></p></br>";
-    $message .= "<p> email: <strong>". $user_email ."</strong></p></br>";
+    $message .= "<p> Name: <strong>". $user_name ."</strong></p></br>";
+    $message .= "<p> Phone number: <strong>". $user_phone ."</strong></p></br>";
+    $message .= "<p> Email: <strong>". $user_email ."</strong></p></br>";
     $message .= "<p> Selected project: <strong>". $user_location ."</strong></p></br>";
     $message .= "<p> Our company name: <strong>". $user_company ."</strong></p></br>";
     $message .= "<p> Number of seats required: <strong>". $num_of_seat ."</strong></p></br>";
