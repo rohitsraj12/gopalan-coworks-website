@@ -51,11 +51,9 @@ $(document).ready(function(){
 
   // owl slider
     var $owl = $('.section__location .owl-carousel');
-
     $owl.children().each( function( index ) {
       $(this).attr( 'data-position', index ); // NB: .attr() instead of .data()
     });
-
     $owl.owlCarousel({
       center: true,
       loop: true,
