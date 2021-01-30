@@ -179,7 +179,7 @@
 
 @media (min-width: 992px) {
   .p-bottom{
-    padding-top: 150px;
+    padding-top: 60px;
   }
 
   /* banner section */
@@ -192,13 +192,13 @@
   
   .half__banner img {
     height: 550px;
-
   }
   
   /* section banner */
   .banner__form {
-    width: 100%;
+    width: 90%;
     position: absolute;
-    bottom: -150px;
+    bottom: 10px;
+    left: 5%;
   }
 }
