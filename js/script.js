@@ -115,5 +115,8 @@ $(document).ready(function(){
       $owl.trigger('to.owl.carousel', [$(this).data( 'position' ), $speed] );
     });
 
+    $('.event__block').hover(function(){
+      $('.community__front > .gallery__block').toggleClass('gallery__block-body');
+    })
 
 })
