@@ -117,6 +117,7 @@ $(document).ready(function(){
 
     $('.event__block').hover(function(){
       $('.community__front > .gallery__block').toggleClass('gallery__block-body');
-    })
+    });
+
 
 })
