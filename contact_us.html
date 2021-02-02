@@ -30,6 +30,7 @@
         
         <!-- stylesheet -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.3/animate.min.css">
         <link href="css/bootstrap.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
         <link rel="stylesheet" href="css/style.css">
@@ -88,50 +89,6 @@
 
             <div class="body__container pb-5 mb-3">
                 <main>
-                    <section class="section__contact py-5">
-                        <div class="container">
-                            <div class="pb-35 py-5 mb-4">
-                                <h2 class="section__header">
-                                    Contact Us
-                                </h2>
-                            </div>
-                        </div>
-
-                        <div class="section__body container pt-5">
-                            <form action="form_1.php" class="" method="POST">
-                                <div class="row">
-                                    <div class="col-sm-6"></div>
-                                    <div class="col-sm-6">
-                                        <div class="section__header-sub">
-                                            send us a message
-                                        </div>
-                                        <div class="w-100 pb-4">
-                                            <label class="text-light" for="name">Name</label>
-                                            <input type="text" name="name" class="form-control w-100" placeholder="Your name" id="name" aria-describedby="emailHelp">
-                                        </div>
-                                        <div class="w-100 pb-4">
-                                            <label class="text-light" for="tel">Mobile</label>
-                                            <input type="tel" name="phone"  class="form-control" id="tel" placeholder="Your mobile" aria-describedby="emailHelp">
-                                            
-                                        </div>
-                                        <div class="w-100 pb-4">
-                                            <label class="text-light" for="email">Email</label>
-                                            <input type="email" name="email"  class="form-control" id="email"  placeholder="Your email" aria-describedby="emailHelp">
-                                
-                                        </div>
-                                        <div class="w-100 pb-1">
-                                            <label class="text-light" for="email">Message</label> <br/>
-                                            <textarea name="" id=""  class="w-100" rows="5"></textarea>
-                                        </div>
-
-                                        <div class="w-100 text-right contact__btn">
-                                            <input type="submit" class="primary-btn" value="Submit">
-                                        </div>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </section>
                     <section class="section__locations py-5 mb-5">
                         <div class="container">
                             <div class="pb-35 pt-5 mb-5">
@@ -243,6 +200,50 @@
                             </article>
                         </div>
                     </section>
+                    <section class="section__contact py-5">
+                        <div class="container">
+                            <div class="pb-35 py-5 mb-4">
+                                <h2 class="section__header">
+                                    Contact Us
+                                </h2>
+                            </div>
+                        </div>
+
+                        <div class="section__body container pt-5">
+                            <form action="form_1.php" class="" method="POST">
+                                <div class="row">
+                                    <div class="col-sm-6"></div>
+                                    <div class="col-sm-6">
+                                        <div class="section__header-sub">
+                                            send us a message
+                                        </div>
+                                        <div class="w-100 pb-4">
+                                            <label class="text-light" for="name">Name</label>
+                                            <input type="text" name="name" class="form-control w-100" placeholder="Your name" id="name" aria-describedby="emailHelp">
+                                        </div>
+                                        <div class="w-100 pb-4">
+                                            <label class="text-light" for="tel">Mobile</label>
+                                            <input type="tel" name="phone"  class="form-control" id="tel" placeholder="Your mobile" aria-describedby="emailHelp">
+                                            
+                                        </div>
+                                        <div class="w-100 pb-4">
+                                            <label class="text-light" for="email">Email</label>
+                                            <input type="email" name="email"  class="form-control" id="email"  placeholder="Your email" aria-describedby="emailHelp">
+                                
+                                        </div>
+                                        <div class="w-100 pb-1">
+                                            <label class="text-light" for="email">Message</label> <br/>
+                                            <textarea name="" id=""  class="w-100" rows="5"></textarea>
+                                        </div>
+
+                                        <div class="w-100 text-right contact__btn">
+                                            <input type="submit" class="primary-btn" value="Submit">
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </section>
                 </main>
             </div>
             <!-- end body container -->
@@ -345,7 +346,8 @@
                 </div>
 
                 <div class="footer__fixed">
-                    <div class="fixed__whatsApp" id="">
+                    <div class="fixed__whatsApp arrow-container animated fadeInDown" id="">
+                        <div class="arrow-1 animated hinge infinite zoomIn"></div>
                         <div class="button">
                             <a target="_blank" href="https://api.whatsapp.com/send?phone=+919353915170&text=Hi!%20I%20am%20Interested.%20Share%20details."> <i class="fa fa-whatsapp"></i></a>
                         </div>
