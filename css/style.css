@@ -62,7 +62,11 @@ p {
   font-weight: 300;
 }
 
-/* default styling */
+/* ********************* 
+*
+*   default styling 
+*
+* ***********************/
 .py-60 {
   padding: 60px 0;
 }
@@ -70,17 +74,18 @@ p {
 .pb-35 {
   padding-bottom: 35px;
 }
+
 .body__wrap {
   position: relative;
   background-color: #0e0e0e;
   background-image: url("data:image/svg+xml,%3Csvg width='20' height='12' viewBox='0 0 20 12' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6 12c0-.622-.095-1.221-.27-1.785A5.982 5.982 0 0 0 10 12c1.67 0 3.182-.683 4.27-1.785A5.998 5.998 0 0 0 14 12h2a4 4 0 0 1 4-4V6c-1.67 0-3.182.683-4.27 1.785C15.905 7.22 16 6.622 16 6c0-.622-.095-1.221-.27-1.785A5.982 5.982 0 0 0 20 6V4a4 4 0 0 1-4-4h-2c0 .622.095 1.221.27 1.785A5.982 5.982 0 0 0 10 0C8.33 0 6.818.683 5.73 1.785 5.905 1.22 6 .622 6 0H4a4 4 0 0 1-4 4v2c1.67 0 3.182.683 4.27 1.785A5.998 5.998 0 0 1 4 6c0-.622.095-1.221.27-1.785A5.982 5.982 0 0 1 0 6v2a4 4 0 0 1 4 4h2zm-4 0a2 2 0 0 0-2-2v2h2zm16 0a2 2 0 0 1 2-2v2h-2zM0 2a2 2 0 0 0 2-2H0v2zm20 0a2 2 0 0 1-2-2h2v2zm-10 8a4 4 0 1 0 0-8 4 4 0 0 0 0 8zm0-2a2 2 0 1 0 0-4 2 2 0 0 0 0 4z' fill='%23000000' fill-opacity='0.48' fill-rule='evenodd'/%3E%3C/svg%3E");
-
 }
 
 .wrap__container {
   margin: 0 auto;
 }
 
+/* text styling */
 .section__header {
   text-align: center;
   font-family: "Rubik", sans-serif;
@@ -90,12 +95,6 @@ p {
   position: relative;
   color: var(--color-text-1);
 }
-
-
-/* .section__header::first-letter {
-  color: var(--color-theme);
-  font-size: 3rem;
-} */
 
 .section__header-sub {
   text-align: center;
@@ -115,16 +114,6 @@ p {
   position: relative;
   color: #dadada;
 }
-/* 
-.section__header::after {
-  content: "";
-  width: 50px;
-  height: 4px;
-  background-color: var(--color-theme);
-  position: absolute;
-  top: 60px;
-  left: 48%;
-} */
 
 .location__header-top {
   padding-bottom: 6px;
@@ -141,6 +130,36 @@ p {
   color: #bbbbbb;
 }
 
+/* #button styling */
+.btn__primary {
+  padding: 6px 18px;
+  background-color: rgba(0,0,0,0.3);
+  border: 1px solid var(--color-theme);
+  color: var(--color-theme);
+  font-size: 1.1rem;
+  border-radius: 3px;
+  text-transform: capitalize;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  transition:300ms ;
+  -webkit-transition:300ms ;
+  -moz-transition:300ms ;
+  -ms-transition:300ms ;
+  -o-transition:300ms ;
+  box-shadow: 0 0 10px rgba(224, 224, 224, 0.2);
+  text-shadow: 0 0 30px rgba(238, 238, 238, 0.5);
+}
+
+.btn__primary:hover {
+  background-color: rgba(0, 0, 0, 0.568);
+  border: 1px solid rgb(190, 190, 190);
+  color: rgb(182, 182, 182);
+  opacity: 0.3;
+  box-shadow: 0 0 10px rgba(10, 10, 10, 0.5);
+}
+
 .primary-btn {
   font-family: var(--font-primary);
   background-color: #111111;
@@ -155,22 +174,26 @@ p {
   background-color: #1f1f1f;
 }
 
-
-
 .primary-btn-secondary {
- background-color: var(--color-theme);
+  background-color: transparent;
   color: var(--color-text-1);
-  border: none;
+  border: 1px solid #747474;
   font-size: 17px;
   padding: 6px 18px;
   border-radius: 3px;
   text-transform: capitalize;
+  transition:300ms ;
+  -webkit-transition:300ms ;
+  -moz-transition:300ms ;
+  -ms-transition:300ms ;
+  -o-transition:300ms ;
 } 
 
 .primary-btn-secondary:hover {
-  background-color: rgb(255, 72, 0);
+  background-color: rgba(0,0,0,0.3);
+ border: 1px solid var(--color-theme);
+ color: var(--color-theme);
 }
-
 
 .primary-btn-secondary-border {
  background-color: transparent;
@@ -188,7 +211,6 @@ p {
  background-color: var(--color-theme);
  border: 1px solid transparent;
  color: #fff;
-
 }
 
 .header-fixed {
@@ -233,7 +255,7 @@ p {
     
 ================================*/
 .body__header {
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(0, 0, 0, 0.3);
   width: 100%;
   position: absolute;
   top: 0;
@@ -261,11 +283,11 @@ p {
 
 .nav-btn {
   padding: 10px 20px ;
-  /* color: var(--color-theme); */
+  color: #fff;
   /* font-size: 20px; */
   /* font-weight: 300; */
-  border: 1px solid #111111;
-  background-color:var(--color-theme);
+  border: 2px solid var(--color-theme);
+  background-color: rgba(24, 24, 24, 0.411);
   /* color: rgb(49, 49, 49); */
   text-shadow: 1px 1px 5px rgba(0, 0, 0, .7);
 
@@ -282,7 +304,9 @@ p {
 }
 
 .nav-btn:hover {
-  border: 1px solid var(--color-theme);
+  background-color: transparent;
+  border: 2px solid var(--color-theme);
+  color: var(--color-theme);
 }
 
 .body__banner img {
