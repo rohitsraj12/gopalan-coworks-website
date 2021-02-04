@@ -134,7 +134,7 @@
                     </div>
                     
 
-                    <section class="section__about-location py-60" id="safety">
+                    <section class="section__about-location py-60 height_100" id="safety">
                         <div class="container">
                             <div class="pb-3 pt-5">
                                 <h2 class="location__header-top">
@@ -167,14 +167,17 @@
 
                                        <div class="location__detail">
                                            <div class="row">
-                                               <div class="col-sm-4">
+                                               <div class="col-sm-3">
                                                     <span><i class="fa fa-map-marker" aria-hidden="true"></i> Bannerghatta Road</span>
                                                </div>
-                                               <div class="col-sm-4">
+                                               <div class="col-sm-3">
                                                     <span><i class="fa fa-building-o" aria-hidden="true"></i> 250 Seats</span>
                                                </div>
-                                               <div class="col-sm-4">
+                                               <div class="col-sm-3">
                                                 <span><i class="fa fa-building-o" aria-hidden="true"></i> 250 Shared Seats</span>
+                                               </div>
+                                               <div class="col-sm-3">
+                                                <span><i class="fa fa-comment" aria-hidden="true"></i> <a class="primary__link" href="#review"> Read Google Reviews</a></span>
                                                </div>
                                            </div>
                                        </div>
@@ -244,7 +247,7 @@
                     </section> -->
                     <!-- section section location -->
 
-                    <section class="section__image-gallery wrap__container">
+                    <section class="section__image-gallery wrap__container height_100">
 
                         <div class="wrap__image-gallery">
                             <div class="wrap__left">
@@ -297,16 +300,19 @@
 
                                             <div class="gallery__form-body text-center">
                                                 <p class="pb-3">
-                                                    Lorem ipsum dolor sit amet consectetur.
+                                                    Visit this building in person following our new safety measures.
                                                 </p>
-                                                <button class="btn__primary">book a tour</button>
+                                                <button class="btn__primary" id="show-form">book a tour</button>
                                             </div>
                                         </article>
                                     </section>
-                                    <section class="gallery__form-wrap">
+                                    <section class="gallery__form-wrap form__hide">
                                         <article>
                                             <header class="gallery__form-header">
                                                 ready for a visit
+                                                <span class="btn__close" id="btn-close">
+                                                    <i class="fa fa-times" aria-hidden="true"></i>
+                                                </span>
                                             </header>
 
                                             <div class="gallery__form-body">
@@ -331,7 +337,7 @@
                                                             <input type="email" name="email"  class="form-control" id="email"  placeholder="Email" aria-describedby="emailHelp">
                                                 
                                                         </div>
-                                                        <div class="form__row">
+                                                        <!-- <div class="form__row">
                                                             <label class="text-light" for="email">Your Location</label>
                                                             <select name="location" class="form-control" id="exampleFormControlSelect1">
                                                                 <option>Select Locaton</option>
@@ -342,7 +348,7 @@
                                                                 <option value="Old Madras Road">Old Madras Road</option>
                                                                 <option value="Old Madras Road">Central Bangalore</option>
                                                             </select>
-                                                        </div>
+                                                        </div> -->
                                                         <div class="form__row">
                                                             <label for="seats">Number Of Seats</label>
                                                             <select name="seats" class="form-control" id="seats" required>
@@ -368,51 +374,61 @@
                         </div>
                     </section>
 
-                    <section class="section__space py-60" id="space">
-                        <div class="container">
-                            <div class="pb-35 pt-5">
+                    <section class="section__space pt-5 height_100" id="space">
+                        <div class="wrap__container">
+                            <div class="pt-5 pb-4">
                                 <h2 class="section__header">
                                     Coworking Plans
                                 </h2>
-                                <h4 class="section__header-sub text-center pt-5 pb-3 sm-hide">
+                                <h4 class="section__header-sub text-center pt-4 pb-3 sm-hide">
                                     Let your business plan determine your space investment. Go flexi-choose between various options-from hot desks, to dedicated desks to private offices or large office. Your office will grow with your business-in the same address.
                                 </h4>
                             </div>
-
-                            <div class="section__body">
+                            
+                            <div class="section__body about__page-plan">
                                 <div class="row">
                                     <div class="col-sm-3 text-center">
-                                            <article class="space__block" data-toggle="modal" data-target="#general">
-                                                <header class="space__header">
-                                                    <h2 class="text__header">
-                                                        Flexible Desk
-                                                    </h2>
-                                                    <p>
-                                                        Best for Individuals
-                                                    </p>
-                                                </header>
-                                                <div class="space__body">
-                                                    <p>
-                                                        Get an indivisuall desk in the open work space
-                                                    </p>
-                                                </div>
-                                                <footer class="space__footer">
-                                                        <div class="price mb-3">
-                                                            &#x20B9; 4,499/-
+                                        <article class="space__block">
+                                            <header class="space__header">
+                                                <h2 class="text__header">
+                                                    Flexible Desk
+                                                </h2>
+                                                <p>
+                                                    Best for Individuals
+                                                </p>
+                                            </header>
+                                            <div class="space__body">
+                                                <p>
+                                                    Get an indivisuall desk in the open work space
+                                                </p>
+                                            </div>
+                                            <footer class="space__footer">
 
-                                                        </div>
-
-                                                    <div class="buton">
-                                                        <span class="btn__primary">
-                                                            get quote
-                                                        </span>
-
+                                                <div class="space__footer">
+                                                    <div class="price mb-3">
+                                                        &#x20B9; 4,499/-
                                                     </div>
-                                                </footer>
+                                                </div>
 
-                                            </article>
+                                                <ul class="space__list pb-3">
+                                                    <li>Light on Budget</li>
+                                                    <li>Fast Internet</li>
+                                                    <li>Printing</li>
+                                                    <li>Lounge Access</li>
+                                                    <li>Meeting Rooms Access</li>
+                                                    <li>Free Beverages & Cookies</li>
+                                                </ul>
+
+                                                <div class="buton">
+                                                    <button class="btn__primary"  data-toggle="modal" data-target="#general">
+                                                        get quote
+                                                    </button>
+
+                                                </div>
+                                            </footer>
+                                        </article>
                                     </div>
-                                    <div class="col-sm-3 text-center" data-toggle="modal" data-target="#general">
+                                    <div class="col-sm-3 text-center">
                                         <article class="space__block">
                                             <header class="space__header">
                                                 <h2 class="text__header">
@@ -433,17 +449,26 @@
                                                     &#x20B9;  6,499/-
                                                 </div>
 
+                                                <ul class="space__list pb-3">
+                                                    <li>Light on Budget</li>
+                                                    <li>Fast Internet</li>
+                                                    <li>Printing</li>
+                                                    <li>Lounge Access</li>
+                                                    <li>Meeting Rooms Access</li>
+                                                    <li>Free Beverages & Cookies</li>
+                                                </ul>
+
                                                 <div class="buton">
-                                                    <span class="btn__primary">
+                                                    <button class="btn__primary"  data-toggle="modal" data-target="#general">
                                                         get quote
-                                                    </span>
+                                                    </button>
 
                                                 </div>
                                             </footer>
 
                                         </article>
                                     </div>
-                                    <div class="col-sm-3 text-center" data-toggle="modal" data-target="#general">
+                                    <div class="col-sm-3 text-center">
                                         <article class="space__block">
                                             <header class="space__header">
                                                 <h2 class="text__header">
@@ -464,17 +489,28 @@
                                                     &#x20B9;  7,999/-
 
                                                 </div>
+
+                                                <ul class="space__list pb-3">
+                                                    <li>Light on Budget</li>
+                                                    <li>Fast Internet</li>
+                                                    <li>Printing</li>
+                                                    <li>Lounge Access</li>
+                                                    <li>Meeting Rooms Access</li>
+                                                    <li>Free Beverages & Cookies</li>
+                                                </ul>
+
                                                 <div class="buton">
-                                                    <span class="btn__primary">
+                                                    <button class="btn__primary"  data-toggle="modal" data-target="#general">
                                                         get quote
-                                                    </span>
+                                                    </button>
 
                                                 </div>
                                             </footer>
+                                            
 
                                         </article>
                                     </div>
-                                    <div class="col-sm-3 text-center" data-toggle="modal" data-target="#general">
+                                    <div class="col-sm-3 text-center">
                                         <article class="space__block">
                                             <header class="space__header">
                                                 <h2 class="text__header">
@@ -497,10 +533,20 @@
                                                      -
 
                                                 </div>
+                                                <ul class="space__list pb-3">
+                                                    <li>Light on Budget</li>
+                                                    <li>Fast Internet</li>
+                                                    <li>Printing</li>
+                                                    <li>Lounge Access</li>
+                                                    <li>Meeting Rooms Access</li>
+                                                    <li>Free Beverages & Cookies</li>
+                                                </ul>
+
                                                 <div class="buton">
-                                                    <span class="btn__primary">
+                                                    <button class="btn__primary"  data-toggle="modal" data-target="#general">
                                                         get quote
-                                                    </span>
+                                                    </button>
+
                                                 </div>
                                             </footer>
                                         </article>
@@ -511,7 +557,7 @@
                     </section>
                     <!-- end section space -->
 
-                    <section class="section__amenities" id="amenity">
+                    <section class="section__amenities height_100" id="amenity">
                         <div class="container">
                             <div class="row">
                                 <div class="col-sm-12">
@@ -519,7 +565,7 @@
                                         <h2 class="section__header">
                                           our Amenities
                                         </h2>
-                                        <p class="py-5 section__header-sub sm-hide ">
+                                        <p class="pt-3 pb-4 section__header-sub sm-hide ">
                                             Our top-notch amenities are new Approaches to Growth!
                                         </p>
                                     </header>
@@ -899,7 +945,7 @@
                     </section>
                     <!-- end section amenities -->
 
-                    <section class="section__testimonial" id="testimonial">
+                    <section class="section__testimonial height_100" id="testimonial">
                         <div class="container">
                             
                             <div class="col-sm-12 mb-5">
@@ -990,58 +1036,113 @@
 
                     </section>
                     <!-- end section workspace -->
-
-                    <section class="section__contact-us py-60" id="contact">
-                        
-                        <div class="container">
-                            <div class="pb-35 pt-5">
-                                <h2 class="section__header">
-                                   Get Special Price
-                                </h2>
-                                <!-- <h4 class="section__header-sub text-center pt-5 pb-3">
-                                    Let your business plan determine your space investment. Go flexi-choose between various options-from hot desks, to dedicated desks to private offices or large office. Your office will grow with your business-in the same address.
-                                </h4> -->
+                    
+                    <section class="section__faq pb-5 mb-5 height_100" id="review">
+                        <div class="wrap__container">
+                            <div class="row">
+                                <div class="col-md-7">
+                                    <header class="pb-3">
+                                        <h4 class="section__header-sub">Frequently Asked Questions</h4> 
+                                    </header>
+                                    <article class="wrap__faq">
+                                        <header class="faq__header">
+                                            <h4>
+                                                Lorem, ipsum dolor sit amet consectetur xplicabo perspiciatis rerum ut?
+                                            </h4>
+                                        </header>
+                                        <div class="faq__ans">
+                                            <p>
+                                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio eveniet ea eum facere! Quo ducimus inventore ipsam adipisci, corporis beatae iste eum ipsum exercitationem expedita quam. Dignissimos, id. Maiores est magnam facilis omnis deleniti vero cumque accusamus? Dolore, adipisci.
+                                            </p>
+                                        </div>
+                                    </article>
+                                    <article class="wrap__faq">
+                                        <header class="faq__header">
+                                            <h4>
+                                                Lorem, ipsum Vel eos quis ratione sapiente ab illum itaque explicabo perspiciatis rerum ut?
+                                            </h4>
+                                        </header>
+                                        <div class="faq__ans">
+                                            <p>
+                                                Lorem ipsum dolor  inventore ipsam adipisci, corporis beatae iste eum ipsum exercitationem expedita quam. Dignissimos, id. Maiores est magnam facilis omnis deleniti vero cumque accusamus? Dolore, adipisci.
+                                            </p>
+                                        </div>
+                                    </article>
+                                    <article class="wrap__faq">
+                                        <header class="faq__header">
+                                            <h4>
+                                                Lorem, ipsum dolor sit amet explicabo perspiciatis rerum ut?
+                                            </h4>
+                                        </header>
+                                        <div class="faq__ans">
+                                            <p>
+                                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio eveniet ea eum facere! Quo ducimus inventore ipsam adipisci, corporis beatae iste eum ipsum exercitationem expedita quam. Dignissimos, id. Maiores est magnam facilis omnis deleniti vero cumque accusamus? Dolore, adipisci.
+                                            </p>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="col-md-5">
+                                    <header class=" pb-3">
+                                        <h4>
+                                            What people are saying
+                                        </h4>
+                                        <ul>
+                                            <li>
+                                                <i class="fa fa-star" aria-hidden="true"></i> 4.4
+                                            </li>
+                                            <li>
+                                                10 Google reviews
+                                            </li>
+                                        </ul>
+                                    </header>
+                                    <article class="section__review">
+                                        <header class="review__header">
+                                            name
+                                            <ul>
+                                                <li>march 5th, 2020</li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></li>
+                                            </ul>
+                                        </header>
+                                        <footer class="review__footer">
+                                            <p>
+                                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta illum repellendus, ipsa adipisci quo nisi.
+                                            </p>
+                                        </footer>
+                                    </article>
+                                    <article class="section__review">
+                                        <header class="review__header">
+                                            name
+                                            <ul>
+                                                <li>march 5th, 2020</li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></li>
+                                            </ul>
+                                        </header>
+                                        <footer class="review__footer">
+                                            <p>
+                                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta illum repellendus, ipsa adipisci quo nisi.
+                                            </p>
+                                        </footer>
+                                    </article>
+                                    <article class="section__review">
+                                        <header class="review__header">
+                                            name
+                                            <ul>
+                                                <li>march 5th, 2020</li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></li>
+                                            </ul>
+                                        </header>
+                                        <footer class="review__footer">
+                                            <p>
+                                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta illum repellendus, ipsa adipisci quo nisi.
+                                            </p>
+                                        </footer>
+                                    </article>
+                                </div>
                             </div>
-
-                            <div class="section__body pt-5">
-                                <form action="form_1.php" method="POST">
-                                    <div class="row">
-                                            <div class="col-sm-3">
-                                                <label class="text-light" for="name">Name</label>
-                                                <input type="text" name="name" class="form-control w-100" placeholder="Your name" id="name" aria-describedby="emailHelp">
-                                            </div>
-                                            <div class="col-sm-3">
-                                                <label class="text-light" for="tel">Mobile no</label>
-                                                <input type="tel" name="phone"  class="form-control" id="tel" placeholder="Your mobile" aria-describedby="emailHelp">
-                                                
-                                            </div>
-                                            <div class="col-sm-3">
-                                                <label class="text-light" for="email">Email address</label>
-                                                <input type="email" name="email"  class="form-control" id="email"  placeholder="Your email" aria-describedby="emailHelp">
-                                    
-                                            </div>
-                                            <div class="col-sm-3">
-                                                <label class="text-light" for="email">Your Location</label>
-                                                <select name="location" class="form-control" id="exampleFormControlSelect1">
-                                                    <option>Select Your Locaton</option>
-                                                    <option value="Banashankari" >Banashankari</option>
-                                                    <option value="Bannerghatta road">Bannerghatta Road</option>
-                                                    <option value="Brooke Field">Brookefield</option>
-                                                    <option value="Commercial Street">Commercial Street</option>
-                                                    <option value="Old Madras Road">Old Madras Road</option>
-                                                    <option value="Old Madras Road">Central Bangalore</option>
-                                                </select>
-                                            </div>
-
-                                            <div class="col-sm-12 text-center mt-4 contact__btn">
-                                                <input type="submit" class="primary-btn" value="Special Quote">
-                                            </div>
-                                    </div>
-                                </form>
-                            </div>
+                           
                         </div>
                     </section>
-                    <!-- end section contact us -->
+                    <!-- end section faq -->
                 </main>
             </div>
             <!-- end body container -->
