@@ -119,5 +119,11 @@ $(document).ready(function(){
       $('.community__front > .gallery__block').toggleClass('gallery__block-body');
     });
 
+    $('#show-form').click(function(){
+      $('.gallery__form-wrap').toggleClass('form__hide')
+    })
 
+    $('#btn-close').click(function(){
+      $('.gallery__form-wrap').toggleClass('form__hide')
+    })
 })
