@@ -119,11 +119,28 @@ $(document).ready(function(){
       $('.community__front > .gallery__block').toggleClass('gallery__block-body');
     });
 
+    // location form hide and show
     $('#show-form').click(function(){
-      $('.gallery__form-wrap').toggleClass('form__hide')
+      $('.gallery__form-wrap').toggleClass('form__hide');
     })
 
     $('#btn-close').click(function(){
-      $('.gallery__form-wrap').toggleClass('form__hide')
+      $('.gallery__form-wrap').toggleClass('form__hide');
     })
+
+    // faq toggle section
+    $('.faq__header').click(function(){
+      $('.faq__ans').slideUp(300);
+      $(this).parent().find('.faq__ans').slideDown(300);
+      $('.fa-angle-down').css('transform', 'rotate(0deg)');
+      $(this).parent().find('.fa-angle-down').css('transform', 'rotate(180deg)');
+    })
+
+    // google review read more button
+    $(".load__review-btn > .btn__link").click(function(){
+      $(".load__review").removeClass('hide');
+      $(this).text('Load Less..');
+      $(this).parent().removeClass('load__review-btn');
+      $(this).parent().addClass('less__review-btn');
+    });
 })
