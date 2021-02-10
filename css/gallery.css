@@ -276,6 +276,12 @@
     .navigation-img-wrapper .navigator {
       display: none;
     }
+
+    
+    
+    #my-carousel .item img {
+      height: 400px;
+    }
   }
 
   /* *************************************
