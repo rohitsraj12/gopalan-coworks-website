@@ -57,6 +57,7 @@ a:hover {
 }
 
 p {
+  font-size: 1rem;
   font-family: var(--font-primary);
   font-weight: 300;
 }
@@ -96,7 +97,7 @@ p {
 .section__header {
   text-align: center;
   font-family: var(--font-primary);
-  font-size: 2rem;
+  font-size: 1.6rem;
   font-weight: 400;
   color: var(--color-text-1);
   text-transform: uppercase;
@@ -125,14 +126,14 @@ p {
 .location__header-top {
   padding-bottom: 6px;
   font-family: var(--font-primary);
-  font-size: 2.2rem;
+  font-size: 1.6rem;
   font-weight: 300;
   color: #dadada;
 }
 
 .location__header-bottom {
   font-family: var(--font-primary);
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   font-weight: 100;
   color: #bbbbbb;
 }
@@ -143,7 +144,7 @@ p {
   background-color: rgba(0,0,0,0.3);
   border: 1px solid var(--color-theme);
   color: var(--color-theme);
-  font-size: 1.1rem;
+  font-size: 1rem;
   border-radius: 3px;
   text-transform: capitalize;
   -webkit-border-radius: 3px;
@@ -229,6 +230,11 @@ p {
   position: fixed;
   width: 100%;
   z-index: 99;
+}
+
+.scroll {
+  display: flex;
+  align-items: center;
 }
 
 .hide {
