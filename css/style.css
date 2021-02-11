@@ -235,6 +235,11 @@ p {
 .scroll {
   display: flex;
   align-items: center;
+  min-height: 100vh;
+}
+
+.scroll .container {
+  margin: 100px auto;
 }
 
 .hide {
@@ -416,6 +421,7 @@ p {
 
 ============================== */
 .safety__block {
+  padding: 200px 0;
   border: 1px solid  #252525;
   border-radius: 4px;
   transition: 400ms;;
