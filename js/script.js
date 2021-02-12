@@ -4,6 +4,8 @@ $(document).ready(function(){
         $("#header-nav").slideToggle();
     })
 
+    // document.getElementsByClassName("banner__video").controls = true;
+
     $(".nav__list").click(function(){
       $(this).find(".sub__nav").slideToggle();
     });
