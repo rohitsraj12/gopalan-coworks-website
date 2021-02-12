@@ -52,7 +52,20 @@
    
 
 }
+
 /* section styling */
+.body__banner {
+    position: relative;
+}
+
+.banner__video {
+    /* height: 100vh; */
+    width: 100%;
+    position: absolute;
+    top:0;
+    left: 0;
+    z-index: 0;
+}
 
 .body__banner img{ 
     width: 100%;
@@ -71,6 +84,7 @@
 
 .section__highligh {
     /* background-color: #9e2642; */
+    margin-top: 92vh;
     background-color: #58292b;
     min-height: 8vh;
     width: 100%;
@@ -78,6 +92,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    z-index: 0;
 }
 
 .highligh__article p {
