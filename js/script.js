@@ -21,21 +21,21 @@ $(document).ready(function(){
 
     
     // scroll down fixed body header 
-      $(window).scroll(function() {    
-          var scroll = $(window).scrollTop();
+      // $(window).scroll(function() {    
+      //     var scroll = $(window).scrollTop();
       
-          if (scroll >= 600) {
-              $("#body-header").addClass("header-fixed");
-          } else {
-              $("#body-header").removeClass("header-fixed");
-          }
+      //     if (scroll >= 600) {
+      //         $("#body-header").addClass("header-fixed");
+      //     } else {
+      //         $("#body-header").removeClass("header-fixed");
+      //     }
 
-          if(scroll >= 600){
-            $("#fixed-button").removeClass("hide");
-          } else {
-            $("#fixed-button").addClass("hide");
-          }
-      });
+      //     if(scroll >= 600){
+      //       $("#fixed-button").removeClass("hide");
+      //     } else {
+      //       $("#fixed-button").addClass("hide");
+      //     }
+      // });
 
       
     $(".close").click(function(){
