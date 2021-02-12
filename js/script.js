@@ -162,7 +162,7 @@ $(document).ready(function(){
 
 
 
-    // testing
+    // typing effect for banner
 
     var TxtType = function(el, toRotate, period) {
       this.toRotate = toRotate;
