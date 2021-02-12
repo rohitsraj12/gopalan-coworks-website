@@ -175,6 +175,8 @@
     border-color: #fe6600;
   }
 
+  
+
   .slider__header {
       background-color: #000;
       position: fixed;
@@ -184,6 +186,7 @@
     .section__safety ul li + li {
       margin-left: 20px;
     }
+
   }
 
 @media (min-width: 992px) {
