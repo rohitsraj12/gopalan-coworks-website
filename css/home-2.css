@@ -42,9 +42,9 @@
 .section__home-one {
 
 }
-@media (max-width: 1000px){
+@media (max-width: 1200px){
     
-    .section__highligh .wrap__container{
-        width: 95%;
+    .section__highligh .wrap__container, .section__home-one .wrap__container{
+        width: 90%;
     }
 }
