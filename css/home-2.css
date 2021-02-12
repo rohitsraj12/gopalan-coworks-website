@@ -56,6 +56,7 @@
 /* section styling */
 .body__banner {
     position: relative;
+    height: 100vh;
 }
 
 .banner__video {
