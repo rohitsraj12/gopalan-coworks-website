@@ -278,7 +278,7 @@ p {
     
 ================================*/
 .body__header {
-  background-color: rgba(0, 0, 0, 0.3);
+  /* background-color: rgba(0, 0, 0, 0.432); */
   width: 100%;
   position: absolute;
   top: 0;
@@ -353,6 +353,7 @@ p {
   position: absolute;
   top: 0;
   left: 0;
+  z-index: 99;
 }
 
 .full__banner .top__social-media ul {
@@ -1824,6 +1825,7 @@ p {
     position: fixed;
     bottom: 50px;
     right: 10px;
+    z-index: 9;
     text-align: center;
   }
     .fixed__whatsApp .button a{
