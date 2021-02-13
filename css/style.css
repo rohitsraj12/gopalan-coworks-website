@@ -1285,6 +1285,73 @@ p {
   text-transform: capitalize;
 }
 
+/* #section location slider
+=============================================== */
+.wrap__location-slider{
+  background-color: #111111;
+  padding: 20px 30px 0;
+}
+
+.location__slider article {
+  border: 1px solid #222222;
+  background-color: rgb(23 23 23);
+}
+
+.location__slider article img {
+  padding: 2px;
+  height: 250px;
+}
+
+.location__slider header {
+  padding: 0 20px 5px;
+}
+
+
+.home__location-header-link {
+  padding-bottom: 10px;
+}
+
+.home__location-header-link a {
+  font-family: var(--font-primary);
+  font-weight: 300;
+  color: var(--color-theme);
+}
+
+.home__location-header {
+  font-family: var(--font-primary);
+  font-size: 0.9rem;
+  font-weight: 300;
+  color: #fefefe;
+}
+.location__slider .owl-nav {
+  /* display: none; */
+}
+
+.location__slider .nav-btn.next-slide {
+  padding: 0;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #4d4d4d;
+  background-color: rgba(255, 255, 255, 0.295);
+  color: red;
+  position: absolute;
+  top: 40%;
+  right: -60px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  transition: 300ms;
+  -webkit-transition: 300ms;
+  -moz-transition: 300ms;
+  -ms-transition: 300ms;
+  -o-transition: 300ms;
+}
+
+.location__slider .nav-btn.next-slide:hover {
+  background-color: rgba(255, 255, 255, 0.712);
+}
 /* ===========================================
 
   #website location page
