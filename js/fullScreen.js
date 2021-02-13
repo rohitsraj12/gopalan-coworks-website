@@ -22,7 +22,7 @@ $(function() {
     loop:true,
     margin:20,
     nav:true,
-    navText:["<div class='d-none nav-btn prev-slide'></div>","<div class='nav-btn next-slide'></div>"],
+    navText:["<div class='d-none nav-btn prev-slide'></div>","<div class='nav-btn next-slide'><span class='link__icon'>&#8594;</span></div>"],
     responsive:{
         0:{
             items:1
