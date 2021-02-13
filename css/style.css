@@ -470,15 +470,6 @@ p {
   margin-bottom: 15px;
 }
 
-
-/* .safety__body ul li:before {
-  content: "\f00c";
-  font-family: "FontAwesome";
-  font-weight: 400;
-  padding-right: 10px;
-  color: var(--color-text-1);
-} */
-
 .safety__body ul li:last-child {
   padding-bottom: 0;
   border-bottom: none;
@@ -1289,7 +1280,7 @@ p {
 =============================================== */
 .wrap__location-slider{
   background-color: #111111;
-  padding: 20px 30px 0;
+  padding: 40px 30px 20px;
 }
 
 .location__slider article {
@@ -1299,7 +1290,7 @@ p {
 
 .location__slider article img {
   padding: 2px;
-  height: 250px;
+  height: 200px;
 }
 
 .location__slider header {
