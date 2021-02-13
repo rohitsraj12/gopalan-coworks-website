@@ -1333,7 +1333,6 @@ p {
   height: 50px;
   border: 1px solid #4d4d4d;
   background-color: rgba(255, 255, 255, 0.295);
-  color: red;
   position: absolute;
   top: 40%;
   right: -60px;
@@ -1348,10 +1347,17 @@ p {
   -ms-transition: 300ms;
   -o-transition: 300ms;
 }
-
 .location__slider .nav-btn.next-slide:hover {
   background-color: rgba(255, 255, 255, 0.712);
 }
+
+.location__slider .nav-btn.next-slide span {
+  line-height: 44px;
+  color: var(--color-theme);
+  font-size: 20px;
+  text-shadow: none;
+}
+
 /* ===========================================
 
   #website location page
