@@ -18,7 +18,7 @@ $(function() {
   });
 
   $('.owl-carousel').owlCarousel({
-    stagePadding: 10,
+    stagePadding: 1,
     loop:true,
     margin:20,
     nav:true,
