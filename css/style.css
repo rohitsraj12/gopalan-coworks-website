@@ -959,6 +959,7 @@ p {
     right: 60px; */
   color: rgb(75, 75, 75);
 }
+
 .section__testimonial .owl-nav button + button {
   margin-left: 20px;
   transition: 400ms;
