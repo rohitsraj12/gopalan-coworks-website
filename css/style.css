@@ -1391,7 +1391,7 @@ p {
 }
 
 .review {
-  overflow:scroll;
+  /* overflow:scroll; */
   height: 400px;
 }
 
