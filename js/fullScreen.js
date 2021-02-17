@@ -17,7 +17,18 @@ $(function() {
       });
   });
 
-  $('.owl-carousel').owlCarousel({
+/***************************************
+ * 
+ *  #home page location slider
+ *  - large screen 
+ *      2 images visible
+ *      right side scroll button
+ *     
+ *  - small screen
+ *      1 image visible
+ *
+ ************************************** */   
+  $('.section__location-slider .owl-carousel').owlCarousel({
     stagePadding: 1,
     loop:true,
     margin:20,
