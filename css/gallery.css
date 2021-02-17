@@ -173,16 +173,18 @@
   }
 
   .gallery__form-wrap {
-    padding: 30px;
     color: rgb(190, 190, 190);
-    background-color: rgb(36, 36, 36);
-    border: 2px solid #1a1a1a;
     margin-bottom: 20px;
     border-radius: 4px;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     -ms-border-radius: 4px;
     -o-border-radius: 4px;
+}
+.top__section, .form__section {
+  padding: 30px;
+  background-color: rgb(36, 36, 36);
+  border: 2px solid #1a1a1a;
 }
 
   .gallery__form-header {
@@ -247,23 +249,32 @@
     color: white;
   }
 
-  .owl-carousel .item {
-    margin: 0 10px;
-  }
-
   @media(min-width: 900px){
+    .wrap__image-gallery {
+      margin-top: 100px;
+      padding-top: 65px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    .owl-carousel .item {
+      margin: 0px 10px 0;
+    }
+ 
     .section__image-gallery .wrap__left {
-      width: 65%;
-      float: left;
+      width: 60%;
+      /* float: left; */
     }
 
     .section__image-gallery .wrap__right {
-      width: 35%;
-      float: left;
+      width: 34%;
+      /* float: left; */
+      /* padding-top: 65px; */
     }
-    
     #my-carousel .item img {
-      height: 500px;
+      height: 450px;
+      width: 100%;
     }
 
     .navigation-img-wrapper .navigator img {
@@ -277,10 +288,13 @@
       display: none;
     }
 
-    
-    
     #my-carousel .item img {
       height: 400px;
+    }
+    
+
+    .owl-carousel .item {
+      margin: 70px 10px 0;
     }
   }
 
