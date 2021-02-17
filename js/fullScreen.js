@@ -3,7 +3,7 @@ $(function() {
     $.scrollify({
         section : ".scroll",
         // interstitialSection : ".body__footer",
-        // easing: "easeOutExpo",
+        easing: "easeOutExpo",
         scrollSpeed: 100,
         offset : 0,
         scrollbars: true,
