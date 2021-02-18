@@ -33,6 +33,8 @@ $(function() {
     loop:true,
     margin:20,
     nav:true,
+    animateOut: 'slideOutUp',
+    animateIn: 'slideInUp',
     navText:["<div class='d-none nav-btn prev-slide'></div>","<div class='nav-btn next-slide'><span class='link__icon'>&#8594;</span></div>"],
     responsive:{
         0:{
