@@ -107,11 +107,12 @@ p {
 .section__header-sub {
   text-align: center;
   font-family: var(--font-primary);
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 300;
-  text-transform: capitalize;
+  /* text-transform: capitalize; */
   position: relative;
   color: var(--color-text-2);
+  line-height: 1.5;
 }
 
 .section__header-secondary {
