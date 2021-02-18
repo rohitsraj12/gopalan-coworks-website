@@ -517,7 +517,7 @@ p {
   color: var(--color-text-1);
 }
 
-.space__footer .btn__primary {
+/* .space__footer .btn__primary {
   font-size: 17px;
   font-weight: 400;
   padding: 8px 20px;
@@ -525,7 +525,7 @@ p {
   text-transform: capitalize;
   color: #d6d6d6;
   background-color: rgb(41, 41, 41);
-}
+} */
 
 .body__container {
   height: 100%;
@@ -1055,11 +1055,16 @@ p {
 
 .client__name {
   color: var(--color-text-1);
-  font-family: 'Charmonman', cursive;
+  /* font-family: 'Charmonman', cursive; */
+  font-family: var(--font-primary);
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 400;
 }
 
 .client__profile {
   color: var(--color-text-2);
+  font-style: normal;
 }
 
 .client__image {
