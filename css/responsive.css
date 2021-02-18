@@ -214,3 +214,11 @@
     left: 5%;
   }
 }
+
+
+/* height condition for small screen */
+@media (min-height: 500px) and (max-height: 992px){
+  .section__image-gallery .wrap__image-gallery{
+    padding-top: 200px;
+  }
+} 
