@@ -231,7 +231,7 @@
   }
 
   .navigation-img-wrapper {
-    margin-top: 20px;
+    margin-top: 10px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -268,13 +268,13 @@
     }
 
     .section__image-gallery .wrap__right {
-      width: 34%;
+      width: 40%;
       /* float: left; */
       /* padding-top: 65px; */
     }
     #my-carousel .item img {
       height: 400px;
-      width: 800px;
+      width: 100%;
     }
 
     .navigation-img-wrapper .navigator img {
