@@ -134,7 +134,7 @@
 @media(min-width: 769px){
     .banner__container h2 {
         font-family: var(--font-primary);
-        font-size: 2.6rem;
+        font-size: 3rem;
         font-weight: 200;
         letter-spacing: 4px;
         word-spacing: -10px;
