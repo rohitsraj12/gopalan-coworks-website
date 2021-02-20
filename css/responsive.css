@@ -124,6 +124,10 @@
 }
 
 @media (min-width: 768px) {
+
+  .banner__container h2 {
+    font-size: 2.6rem;
+  }
   /* .m-banner {
     display: none;
   } */
