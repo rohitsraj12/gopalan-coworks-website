@@ -2077,3 +2077,12 @@ p {
   -webkit-animation-name: zoomIn;
     animation-name: zoomIn;
 }
+
+
+.sub__head_location {
+  font-family: var(--font-primary);
+  font-size: 1rem;
+  color: #a0a0a0;
+  font-weight: 400;
+text-transform: capitalize;
+}
