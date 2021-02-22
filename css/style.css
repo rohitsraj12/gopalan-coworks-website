@@ -1867,12 +1867,7 @@ text-transform: capitalize;
 
 .wrap__location-slider {
   border: 1px solid rgba(51, 51, 51, 0.8);
-  box-shadow: 0 0 10px rgba(0, 0, 0, .7);
-  border-radius: 4px;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  -ms-border-radius: 4px;
-  -o-border-radius: 4px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, .7);
 }
 
 .location__slider .nav-btn.next-slide {
