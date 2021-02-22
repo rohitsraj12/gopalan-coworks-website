@@ -219,10 +219,15 @@
   .full__banner img {
     height: 100vh;
   }
-  
-  .half__banner img {
+
+  .half_banner {
     height: 550px;
   }
+  
+.half__banner img {
+  height: 650px;
+}
+
   
   /* section banner */
   .banner__form {
