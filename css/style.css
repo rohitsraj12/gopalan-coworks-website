@@ -1507,7 +1507,7 @@ p {
 .section__why .col-sm-4:hover svg {
   fill: #d8d8d8;
 }
- /* #coworking space detail */
+ /* #coworking space detail
 ===============================================*/
 .about__page-plan .space__list {
   font-size: 1rem;
@@ -1542,7 +1542,10 @@ p {
   #contact form page
 
 ===============================================*/
-
+.section__contact .section__body{
+  
+  box-shadow: 0 0 10px rgb(19, 19, 19);
+}
 .section__contact .section__header-sub {
     margin-bottom: 20px;
     padding: 0 0 10px 5px;
@@ -1552,6 +1555,25 @@ p {
     font-weight: 400;
 }
 
+.contact__address address {
+  color: #707070;
+  padding-bottom: 10px;
+}
+
+.contact__connect ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
+.contact__connect li {
+  color: #707070;
+}
+
+.contact__connect a {
+  color: var(--color-theme);
+}
 
 .section__body p{
   color: #8b8b8b;
