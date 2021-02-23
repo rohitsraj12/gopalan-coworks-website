@@ -29,6 +29,7 @@
         <link rel="shortcut icon" type="image/png" href="img/brand/favicon.png" />
         
         <!-- stylesheet -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.3/animate.min.css">
         <link href="css/bootstrap.css" rel="stylesheet">
@@ -51,14 +52,14 @@
                 </div>
 
                 <header class="wrap__container">
-                    <div class="header__brand">
+                    <div class="header__brand" data-aos="fade-down" data-aos-duration="1000">
                         <a href="">
                             <img src="img/brand/Logo-1.png" class="d-banner-image" alt="Gopalan Coworks Logo">
                             <img src="img/brand/Logo-1-sm.png" class="m-banner-image" alt="Gopalan Coworks Logo">
                         </a>
                     </div>
                     <!-- end header brand -->
-                    <nav class="header__nav" id="header-nav">
+                    <nav class="header__nav" id="header-nav" data-aos="fade-down" data-aos-duration="1000">
                         <ul>
                             <li class="nav__list"><a href="index.html" class="nav__link">Home</a></li>
                             <li class="nav__list"><a class="nav__link">Locations <i class="fa fa-angle-down pl-2" aria-hidden="true"></i></a>
@@ -83,20 +84,20 @@
             </div>
             <!-- end body header -->
 
-            <div class="body__banner half__banner">
+            <div class="scroll body__banner full__banner">
                 <div class="banner__wrap">
                     <!-- <img src="" alt="gopalan coworks"> -->
                     <!-- 
                         src = 
                         srcset = o to 574px, 575 to 2000
                      -->
-                     <img src="img/banner/banner-4.jpg" alt="" class="d-banner-image">
-                     <img src="img/banner/banner-1-sm.jpg" alt="" class="m-banner-image">
+                     <img src="img/banner/banner-04.jpg" alt="" class="d-banner-image" data-aos="zoom-in-up" data-aos-duration="1000">
+                     <img src="img/banner/banner-1-sm.jpg" alt="" class="m-banner-image" data-aos="zoom-in-up" data-aos-duration="1000">
                      <!-- <img src="img/banner/banner-1-sm.jpg" alt="" class="m-banner"> -->
                     <!-- <img width="100%" src="img/banner/banner-1-sm.jpg" srcset="img/banner/banner-1-sm.jpg 768w, img/banner/banner-1.jpg 2000w" alt="Gopalan Aqua Project"> -->
                     <section class="banner__container">
                         <article>
-                            <header  data-aos="fade-left" data-aos-duration="2000">
+                            <header  data-aos="zoom-in-up" data-aos-duration="1400">
                                 <h2>
                                     contact us<i class="fa fa-circle" aria-hidden="true"></i> 
                                 </h2>
@@ -116,7 +117,7 @@
 
             <div class="body__container pb-5 mb-3">
                 <main>
-                    <section class="section__locations py-5 mb-5">
+                    <!-- <section class="section__locations py-5 mb-5">
                         <div class="container">
                             <div class="pb-35 pt-5 mb-5">
                                 <h3 class="section__header">
@@ -226,10 +227,10 @@
                                 </div>
                             </article>
                         </div>
-                    </section>
+                    </section> -->
                     <section class="section__contact py-5">
                         <div class="container">
-                            <div class="pb-35 py-5 mb-4">
+                            <div class="pb-35 py-5 mb-2">
                                 <h2 class="section__header">
                                     Contact Us
                                 </h2>
@@ -239,10 +240,66 @@
                         <div class="section__body container pt-5">
                             <form action="form_1.php" class="" method="POST">
                                 <div class="row">
-                                    <div class="col-sm-6"></div>
+                                    <div class="col-sm-6">
+                                        
+                                        <div class="section__header-sub">
+                                            We are located at
+                                        </div>
+                                        <article class="contact__address">
+                                            <header class="location__header-bottom">
+                                                <i class="fa fa-map-marker pr-2" aria-hidden="true"></i> Bannerghatta Road
+                                            </header>
+
+                                            <address class="pl-4">
+                                                Gopalan Innovation Mall, 5th Floor, </br>Bannerghatta Main Rd, Bengaluru, Karnataka 560076
+                                            </address>
+                                        </article>
+                                        <article class="contact__address">
+                                            <header class="location__header-bottom">
+                                                <i class="fa fa-map-marker pr-2" aria-hidden="true"></i> Banashankari
+                                            </header>
+                                            <address class="pl-4">
+                                                Gopalan Promenade Mall, 3rd floor, Kathreguppe, </br>Banashankari 3rd Stage, Bengaluru, Karnataka 560085
+                                            </address>
+                                        </article>
+                                        <article class="contact__address">
+                                            <header class="location__header-bottom">
+                                                <i class="fa fa-map-marker pr-2" aria-hidden="true"></i> Brookefield
+                                            </header>
+                                            <address class="pl-4">
+                                                Gopalan Millennium Tower, Kundalahalli Colony, </br>Brookefield, Bengaluru, Karnataka 560037
+                                            </address>
+                                        </article>
+                                        <article class="contact__address">
+                                            <header class="location__header-bottom">
+                                                <i class="fa fa-map-marker pr-2" aria-hidden="true"></i> Commercial Street
+                                            </header>
+                                            <address class="pl-4">
+                                                Commercial Complex at SY No. 82, </br>Ibrahim Sahib St, Bengaluru, Karnataka 560001
+                                            </address>
+                                        </article>
+                                        <article class="contact__address">
+                                            <header class="location__header-bottom">
+                                                <i class="fa fa-map-marker pr-2" aria-hidden="true"></i> Old Madras Road
+                                            </header>
+                                            <address class="pl-4">
+                                                2nd floor, Gopalan Signature Mall, </br>Swami Vivekananda Rd, Nagavarapalya, </br>Bengaluru, Karnataka 560093
+                                            </address>
+                                        </article>
+                                        <!-- <div class="pt-4 contact__connect">
+                                            <ul>
+                                                <li>
+                                                    Phone : <a href="tel:080 4931 4961">080 4931 4961</a>
+                                                </li>
+                                                <li>
+                                                    Email : <a href="mailto:sales@gopalancoworks.com" target="_blank">sales@gopalancoworks.com</a>
+                                                </li>
+                                            </ul>
+                                        </div> -->
+                                    </div>
                                     <div class="col-sm-6">
                                         <div class="section__header-sub">
-                                            send us a message
+                                            Send us a message
                                         </div>
                                         <div class="w-100 pb-4">
                                             <label class="text-light" for="name">Name</label>
@@ -264,7 +321,7 @@
                                         </div>
 
                                         <div class="w-100 text-right contact__btn">
-                                            <input type="submit" class="primary-btn" value="Submit">
+                                            <input type="submit" class="btn__primary" value="Submit">
                                         </div>
                                     </div>
                                 </div>
@@ -400,9 +457,14 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>    
         
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.4/jquery.scrollify.min.js"></script>
         <script src="js/fullScreen.js"></script> 
-        <script src="js/script.js"></script>       
+        <script src="js/script.js"></script>  
+        
+    <script>
+        AOS.init();
+      </script>     
         </body>
     </html>
    
