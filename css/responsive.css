@@ -17,6 +17,10 @@
     display: none;
   } */
 
+  .body__header {
+      background-color: rgba(0, 0, 0, 0.836);
+  }
+
   .header__brand img {
     height: 50px;
   }
@@ -56,6 +60,10 @@
     right: 2%;
     font-size: 24px;
   }
+
+  .nav__link > .nav-btn {
+    display: none;
+  }
   
   .sub-nav__link {
     margin: 0 0 0 15px;
@@ -76,6 +84,7 @@
     top: 25px;
     right: 0;
     padding: 0;
+    z-index: 999;
   }
 
   .line {
