@@ -3,13 +3,47 @@ $(document).ready(function(){
 
     
     if(mediaQuery < 574){
-        console.log("mobile device style");
+        // console.log("mobile device style");
 
-    } else if ((mediaQuery > 574) && (mediaQuery < 768)){
-        console.log("tab device style");
+        $(".footer__fixed").addClass("hide");
+
+        // fixed load after 1000px scroll
+        $(window).scroll(function () {
+            var height = $(window).height();
+        
+            if ($(window).scrollTop() > height) {
+            console.log("hi");
+            $(".footer__fixed").removeClass("hide");
+        
+            } else {
+            console.log("hello");
+            $(".footer__fixed").addClass("hide");
+            }
+        });
+
+
+
+    } else if ((mediaQuery < 768)){
+        // console.log("tab device style");
+        $(".footer__fixed").addClass("hide");
+
+
+        // fixed load after 1000px scroll
+        $(window).scroll(function () {
+            var height = $(window).height();
+        
+            if ($(window).scrollTop() > height) {
+            console.log("hi");
+            $(".footer__fixed").removeClass("hide");
+        
+            } else {
+            console.log("hello");
+            $(".footer__fixed").addClass("hide");
+            }
+        });
 
     } else {
-        // console.log("large device style");
+        console.log("large device style");
 
         $(function() {
             $.scrollify({
@@ -39,11 +73,11 @@ $(document).ready(function(){
         var height = $(window).height();
     
         if ($(window).scrollTop() > 800) {
-          console.log("hi");
+        //   console.log("hi");
           $(".fixed__bottom").removeClass("hide");
     
         } else {
-          console.log("hello");
+        //   console.log("hello");
           $(".fixed__bottom").addClass("hide");
         }
     });
