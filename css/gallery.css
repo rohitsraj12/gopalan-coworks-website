@@ -153,8 +153,6 @@
   .gallery__grid .box.h {
     grid-column: span 1;
   }
-  
-
 
   /* ***********************************
   *
@@ -297,30 +295,3 @@
       margin: 70px 10px 0;
     }
   }
-
-  /* *************************************
- *
- *  #form section
- *
- * **************************************** */
-
-.form__row  {
-  padding-bottom: 10px;
-}
-
-.form__row label {
-  color:#b6b6b6 !important; 
-}
-
- .form__row input, .form__row input:focus, .form__row select{
-    background-color: #00000070;
-    border-color: #424141; 
- }
-
- .form__row option,  .form__row option:focus, .form__row option::selection {
-  background-color: #1f1f1f;
- }
-
- .form__row input::placeholder {
-   color: rgb(49, 49, 49);
- }
