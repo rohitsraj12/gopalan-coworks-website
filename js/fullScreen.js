@@ -12,14 +12,31 @@ $(document).ready(function(){
             var height = $(window).height();
         
             if ($(window).scrollTop() > height) {
-            console.log("hi");
             $(".footer__fixed").removeClass("hide");
         
             } else {
-            console.log("hello");
             $(".footer__fixed").addClass("hide");
             }
         });
+
+        // scroll up to show body header
+        var prevScrollpos = window.pageYOffset;
+
+        window.onscroll = function() {
+            var currentScrollPos = window.pageYOffset;
+
+            if (prevScrollpos > currentScrollPos) {
+                console.log('up');
+                $("#body-header").addClass('header-fixed');
+                $("#body-header").removeClass('body__header');
+            } else {
+                console.log('down');
+                $("#body-header").removeClass('header-fixed');
+                $("#body-header").addClass('body__header');
+
+            }
+            prevScrollpos = currentScrollPos;
+        }
 
 
 
@@ -41,6 +58,8 @@ $(document).ready(function(){
             $(".footer__fixed").addClass("hide");
             }
         });
+
+        
 
     } else {
         console.log("large device style");
