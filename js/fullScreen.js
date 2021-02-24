@@ -1,21 +1,56 @@
+$(document).ready(function(){
+    const mediaQuery = window.innerWidth;
 
-$(function() {
-    $.scrollify({
-        section : ".scroll",
-        // interstitialSection : ".body__footer",
-        easing: "easeOutExpo",
-        scrollSpeed: 100,
-        offset : 0,
-        scrollbars: true,
-        standardScrollElements: "",
-        updateHash: true,
-        touchScroll:true,
-        // before:function() {},
-        // after:function() {},
-        // afterResize:function() {},
-        // afterRender:function() {}
-      });
-  });
+    
+    if(mediaQuery < 574){
+        console.log("mobile device style");
+
+    } else if ((mediaQuery > 574) && (mediaQuery < 768)){
+        console.log("tab device style");
+
+    } else {
+        // console.log("large device style");
+
+        $(function() {
+            $.scrollify({
+                section : ".scroll",
+                // interstitialSection : ".body__footer",
+                easing: "easeOutExpo",
+                scrollSpeed: 100,
+                offset : 0,
+                scrollbars: true,
+                standardScrollElements: "",
+                updateHash: true,
+                touchScroll:true,
+                // before:function() {},
+                // after:function() {},
+                // afterResize:function() {},
+                // afterRender:function() {}
+            });
+        });
+    }
+
+
+    
+
+
+    // fixed load after 1000px scroll
+    $(window).scroll(function () {
+        var height = $(window).height();
+    
+        if ($(window).scrollTop() > 800) {
+          console.log("hi");
+          $(".fixed__bottom").removeClass("hide");
+    
+        } else {
+          console.log("hello");
+          $(".fixed__bottom").addClass("hide");
+        }
+    });
+})
+
+
+
 
 /***************************************
  * 
