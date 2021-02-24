@@ -29,13 +29,14 @@
         <link rel="shortcut icon" type="image/png" href="img/brand/favicon.png" />
         
         <!-- stylesheet -->
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.3/animate.min.css">
         <link href="css/bootstrap.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/home-2.css">
+        <link rel="stylesheet" href="css/gallery.css">
         <link rel="stylesheet" href="css/responsive.css">
     </head>
     <body>
@@ -801,27 +802,68 @@
                     <section class="scroll section__testimonial pb-5" id="testimonial">
                         <div class="container">
                             
-                            <div class="col-sm-12" data-aos="fade-down" data-aos-duration="1000">
+                            <div class="col-sm-12 mb-5">
                                 <header>
-                                    <h2 class="section__header">
+                                    <h2 class="section__header" data-aos="fade-down" data-aos-duration="1000">
                                         Our Happy Clients
                                     </h2>
-                                    <!-- <p class="py-5 section__header-sub ">
-                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus labore porro veniam iure placeat nam neque?
-                                    </p> -->
                                 </header>
                             </div>
 
-                            <div class="testimonial__detail">
+                            <div class="testimonial__detail" data-aos="fade-up" data-aos-duration="1000">
                                 
-                                <div class="text-white">
+                                <div class="owl-carousel text-white">
+                                    <article >
+                                        <blockquote class="">
+                                            <div class=" text-center">
+                                                <p class="client__say">
+                                                    Gopalan Coworks was exactly what we were looking for to grow our business; in the heart of the City and very well connected to main transport routes, design-led and playful rather than stuffy like so many of the serviced offices we’d seen in the City. Great place to work and collaborate with other entrepreneurs. We will highly recommend
+                                                </p>
+                                                <div class="client-info d-sm-flex justify-content-between align-items-center">
+                                                    <figure class="text-center">
+                                                        <img class="client__image" width="30px" src="img/testimonial/2.png" alt="">
+                                                    </figure>
+                                                    <cite>
+                                                        <h4 class="client__name">
+                                                            Rajasekhara Reddy A
+                                                        </h4>
+                                                        <p class="client__profile">
+                                                            Director
+                                                        </p>
+                                                    </cite>
+                                                </div>
+                                            </div>
+                                        </blockquote>
+                                    </article>
                                     <article>
                                         <blockquote class="">
                                             <div class="text-center">
-                                                <p class="client__say" data-aos="fade-up" data-aos-duration="1000">
-                                                    Mobijini moved to Gopalan Coworks from a traditional independent office.  It's worked very well for us. Our team loves the well-designed interiors, open spaces and ambiance. Gopalan Coworks takes away a lot of the hassles of managing infrastructure, and it's a great way of providing employees with a work environment that's best in class. 
+                                                <p class="client__say">
+                                                    Gopalan Coworks is an innovative concept with  great place to work .perfect place for Startups and small businesses. As a new company we achieved huge savings. Great Atmosphere ,Excellent Vibe,Very efficient team . Gopalan Co-Works offers better overall value than the rest of the competitors !!
                                                 </p>
-                                                <div class="client-info d-sm-flex justify-content-between align-items-center" data-aos="fade-up" data-aos-duration="1500">
+                                                <div class="client-info d-sm-flex justify-content-between align-items-center">
+                                                    <figure class="text-center">
+                                                        <img class="client__image" width="30px" src="img/testimonial/1.png" alt="">
+                                                    </figure>
+                                                    <cite>
+                                                        <h4 class="client__name">
+                                                            Atish Chetan
+                                                        </h4>
+                                                        <p class="client__profile">
+                                                            Head of Operations
+                                                        </p>
+                                                    </cite>
+                                                </div>
+                                            </div>
+                                        </blockquote>
+                                        
+                                    </article>
+                                    <article>
+                                        <blockquote class="">
+                                            <div class="text-center">
+                                                <p class="client__say">
+                                                    Mobijini moved to Gopalan Coworks from a traditional independent office.  It's worked very well for us. Our team loves the well-designed interiors, open spaces and ambiance. Gopalan Coworks takes away a lot of the hassles of managing infrastructure, and it's a great way of providing employees with a work environment that's best in class. 
+                                                </p><div class="client-info d-sm-flex justify-content-between align-items-center">
                                                     <figure class="text-center">
                                                         <img class="client__image" width="30px" src="img/testimonial/3.png" alt="">
                                                     </figure>
@@ -838,7 +880,7 @@
                                         </blockquote>
                                     </article>
                                 </div>
-                                
+                               
                             </div>
                         </div>
 
@@ -960,232 +1002,36 @@
                                 <a href="tel:080 4931 4961">Call Us</a>
                             </li>
                             <li>
-                                <a href="" class=""  data-toggle="modal" data-target="#general">Get quote</a>
+                                <a href="" class=""  data-toggle="modal" data-target="#general">Get Quote</a>
                             </li>
                         </ul>
                     </div>
                 </div>
+
+                <div class="fixed__bottom hide">
+                    <ul> 
+                        <li><a href="tel:080 4931 4961">Call Us</a></li>
+                    
+                        <li><a class="whats__app" target="_blank" href="https://api.whatsapp.com/send?phone=+919353915170&text=Hi!%20I%20am%20Interested.%20Share%20details."> <i class="fa fa-whatsapp"></i></a></li>
+                       
+                        <li><a href="" data-toggle="modal" data-target="#general">Enquire Now</a></li>
+                    </ul>
+                </div>
+                <!-- end fixed bottom -->
             </div>
             <!-- end body footer -->
 
-            <!-- modals banashankari -->
-            <div class="modal fade" id="banashankari" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                  <div class="modal-content">
+        </div>
+        <!-- end body wrap -->
+
+        <div class="modal fade" id="general" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered ">
+                <div class="modal-content">
                     <div class="modal-header">
-                      <h5 class="modal-title" id="staticBackdropLabel">Banashankari</h5>
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <h5 class="modal-title" id="staticBackdropLabel">Equiry Form </h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
-                      </button>
-                    </div>
-                    <div class="modal-body">
-                     
-                        <form action="form_1.php" method="POST" class="banner__form w-100 py-0">
-                            <!-- <header class="text-center h4 pb-3">
-                            Enquire Form
-                            </header> -->
-                            <div class="form-group">
-                            <label class="text-light" for="name">Name</label>
-                            <input type="text" class="form-control" placeholder="Your name" id="name" aria-describedby="emailHelp">
-                            </div>
-                            <div class="form-group">
-                            <label for="tel">Mobile no</label>
-                            <input type="tel" class="form-control" id="tel" placeholder="Your mobile" aria-describedby="emailHelp">
-                            </div>
-                            <div class="form-group">
-                            <label for="email">Email address</label>
-                            <input type="email" class="form-control" id="email"  placeholder="Your email" aria-describedby="emailHelp">
-                            </div>
-                            <input type="hidden" name="location" value="Banashankari">
-
-                            <div class="text-center">
-                            <input type="submit" class="primary-btn">
-            
-                            </div>
-                        </form>
-                    </div>
-                   
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- end model banashankari -->
-
-            <!-- modals bannerghatta -->
-            <div class="modal fade" id="bannerghatta" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="staticBackdropLabel">Bannerghatta Road</h5>
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                      </button>
-                    </div>
-                    <div class="modal-body">
-                        <form action="form_1.php" method="POST" class="banner__form w-100 py-0">
-                            <!-- <header class="text-center h4 pb-3">
-                            Enquire Form
-                            </header> -->
-                            <div class="form-group">
-                            <label for="name">Name</label>
-                            <input type="text" class="form-control" placeholder="Your name" id="name" aria-describedby="emailHelp">
-                            </div>
-                            <div class="form-group">
-                            <label for="tel">Mobile no</label>
-                            <input type="tel" class="form-control" id="tel" placeholder="Your mobile" aria-describedby="emailHelp">
-                            </div>
-                            <div class="form-group">
-                            <label for="email">Email address</label>
-                            <input type="email" class="form-control" id="email"  placeholder="Your email" aria-describedby="emailHelp">
-                            </div>
-                            <input type="hidden" name="location" value="Bannerghatta Road">
-
-                            <div class="text-center">
-                            <input type="submit" class="primary-btn">
-            
-                            </div>
-                        </form>
-                    </div>
-                   
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- end model bannerghatta -->
-
-            <!-- modals brooke -->
-            <div class="modal fade" id="brooke" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="staticBackdropLabel">Brooke Field</h5>
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                      </button>
-                    </div>
-                    <div class="modal-body">
-                        <form action="form_1.php" method="POST" class="banner__form w-100 py-0">
-                            <!-- <header class="text-center h4 pb-3">
-                            Enquire Form
-                            </header> -->
-                            <div class="form-group">
-                            <label for="name">Name</label>
-                            <input type="text" class="form-control" placeholder="Your name" id="name" aria-describedby="emailHelp">
-                            </div>
-                            <div class="form-group">
-                            <label for="tel">Mobile no</label>
-                            <input type="tel" class="form-control" id="tel" placeholder="Your mobile" aria-describedby="emailHelp">
-                            </div>
-                            <div class="form-group">
-                            <label for="email">Email address</label>
-                            <input type="email" class="form-control" id="email"  placeholder="Your email" aria-describedby="emailHelp">
-                            </div>
-                            <input type="hidden" name="location" value="Brooke Field">
-                            <div class="text-center">
-                            <input type="submit" class="primary-btn">
-            
-                            </div>
-                        </form>
-                    </div>
-                    
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- end model brooke -->
-
-            <!-- modals commercial -->
-            <div class="modal fade" id="commercial" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="staticBackdropLabel">Commercial Street</h5>
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                      </button>
-                    </div>
-                    <div class="modal-body">
-                        <form action="form_1.php" method="POST" class="banner__form w-100 py-0">
-                            <!-- <header class="text-center h4 pb-3">
-                            Enquire Form
-                            </header> -->
-                            <div class="form-group">
-                            <label for="name">Name</label>
-                            <input type="text" class="form-control" placeholder="Your name" id="name" aria-describedby="emailHelp">
-                            </div>
-                            <div class="form-group">
-                            <label for="tel">Mobile no</label>
-                            <input type="tel" class="form-control" id="tel" placeholder="Your mobile" aria-describedby="emailHelp">
-                            </div>
-                            <div class="form-group">
-                            <label for="email">Email address</label>
-                            <input type="email" class="form-control" id="email"  placeholder="Your email" aria-describedby="emailHelp">
-                            </div>
-                            <input type="hidden" name="location" value="Commercial Street">
-
-                            <div class="text-center">
-                            <input type="submit" class="primary-btn">
-            
-                            </div>
-                        </form>
-                    </div>
-                   
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- end model commercial -->
-
-            <!-- modals Old madras road -->
-            <div class="modal fade" id="madras" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="staticBackdropLabel">Old Madras Road </h5>
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                      </button>
-                    </div>
-                    <div class="modal-body">
-                        <form action="form_1.php" method="POST" class="banner__form w-100 py-0">
-                            <!-- <header class="text-center h4 pb-3">
-                            Enquire Form
-                            </header> -->
-                            <div class="form-group">
-                            <label for="name">Name</label>
-                            <input type="text" class="form-control" placeholder="Your name" id="name" aria-describedby="emailHelp">
-                            </div>
-                            <div class="form-group">
-                            <label for="tel">Mobile no</label>
-                            <input type="tel" class="form-control" id="tel" placeholder="Your mobile" aria-describedby="emailHelp">
-                            </div>
-                            <div class="form-group">
-                            <label for="email">Email address</label>
-                            <input type="email" class="form-control" id="email"  placeholder="Your email" aria-describedby="emailHelp">
-                            </div>
-                            <input type="hidden" name="location" value="Old Madras Road">
-                            <div class="text-center">
-                            <input type="submit" class="primary-btn">
-            
-                            </div>
-                        </form>
-                    </div>
-                    
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- end model Old madras road  -->
-
-            <!-- modals general form -->
-            <div class="modal fade" id="general" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="staticBackdropLabel">Equiry Form </h5>
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                      </button>
+                        </button>
                     </div>
                     <div class="modal-body">
                         <form action="form_1.php" method="POST" class="banner__form w-100 py-0 px-2">
@@ -1193,16 +1039,16 @@
                             Enquire Form
                             </header> -->
                             <div class="form-group">
-                            <label for="name">Name</label>
-                            <input type="text" class="form-control" name="name" placeholder="Your name" id="name" aria-describedby="emailHelp">
+                                <label for="name">Name</label>
+                                <input type="text" class="form-control" name="name" placeholder="Your name" id="name" aria-describedby="emailHelp">
                             </div>
                             <div class="form-group">
-                            <label for="tel">Mobile no</label>
-                            <input type="tel" class="form-control" name="phone"  id="tel" placeholder="Your mobile" aria-describedby="emailHelp">
+                                <label for="tel">Mobile no</label>
+                                <input type="tel" class="form-control" name="phone"  id="tel" placeholder="Your mobile" aria-describedby="emailHelp">
                             </div>
                             <div class="form-group">
-                            <label for="email">Email address</label>
-                            <input type="email" class="form-control" name="email"  id="email"  placeholder="Your email" aria-describedby="emailHelp">
+                                <label for="email">Email address</label>
+                                <input type="email" class="form-control" name="email"  id="email"  placeholder="Your email" aria-describedby="emailHelp">
                             </div>
                             <div class="form-group">
                             <label for="email">Your Location</label>
@@ -1228,32 +1074,29 @@
                                 </select>
                             </div>
                             <div class="text-center">
-                            <input type="submit" class="primary-btn">
-            
+                                <input type="submit" class="btn__primary">
                             </div>
                         </form>
                     </div>
-                    
-                  </div>
                 </div>
-              </div>
             </div>
-            <!-- end model general form -->
+        </div>
+        <!-- end model general form -->
 
     <!-- script -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.4/jquery.scrollify.min.js"></script>
     <script src="js/fullScreen.js"></script>  
     <script src="js/script.js"></script>    
 
-    <script>
+    <!-- <script>
         AOS.init();
-      </script>
+      </script> -->
     </body>
 </html>
 
