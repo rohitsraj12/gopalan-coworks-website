@@ -331,7 +331,7 @@ background-color: #1f1f1f;
 .header-fixed {
   position: fixed;
   top: 0;
-  width: 95%;
+  width: 98%;
   background-color: rgba(0, 0, 0, 0.733);
   z-index: 999;
 }
