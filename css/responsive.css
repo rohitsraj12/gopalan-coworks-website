@@ -12,7 +12,7 @@
   --font-primary: "Rubik", sans-serif;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   /* .d-banner {
     display: none;
   } */
@@ -121,25 +121,82 @@
     stroke-dashoffset: -134;
     stroke-width: 6;
   }
+
+  .fixed__bottom {
+    display: none;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1000px){
-
-
   .header__nav > ul > li:last-child {
-    /* margin-left: 20px; */
     display: none;
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
+  
+  /* #fixed enquire, whats app and call buttons 
+  ======================================================= */
+  .fixed__bottom {
+    position: fixed;
+    top: 40%;
+    right:-88px;
+    color: #fff;
+    font-size: 30px;
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+  }
 
+  .fixed__bottom  ul {
+    display: flex;
+  }
+
+  .fixed__bottom a {
+    display: inline-block;
+    padding: 10px 10px;
+    font-size: 1rem;
+    color:#fff;
+    font-weight: 400;
+  }
+
+  .fixed__bottom .whats__app {
+    background-color: #24cd63;
+  }
+
+  .fixed__bottom ul li:first-child {
+    background-color:  #F00;
+  }
+
+  .fixed__bottom ul li:last-child {
+    background-color: #032f71;
+  }
+ 
+  .hide {
+    display: none;
+  }
+
+  /* mobile bottom fixed  */
+  .footer__fixed {
+    display: none;
+  }
+    
+  .section__amenities article:hover .box { 
+    top: 6%;
+    left: 19%;
+    transform: translate(-25%, -18%);
+    transform-origin: center;
+    transform: rotate(45deg);
+    border-color: var(--color-theme);
+  }
+  
+  /* #banner section
+  ====================================================== */
   .banner__container h2 {
     font-size: 2.6rem;
   }
-  /* .m-banner {
-    display: none;
-  } */
 
   .header__brand img {
     height: 60px;
@@ -233,18 +290,10 @@
     height: 550px;
   }
   
-.half__banner img {
-  height: 650px;
-}
-
-  
-  /* section banner */
-  .banner__form {
-    width: 90%;
-    position: absolute;
-    bottom: 10px;
-    left: 5%;
+  .half__banner img {
+    height: 650px;
   }
+
 }
 
 
