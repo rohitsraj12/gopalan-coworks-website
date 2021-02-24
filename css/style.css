@@ -320,7 +320,7 @@ background-color: #1f1f1f;
     
 ================================*/
 .body__header {
-  /* background-color: rgba(0, 0, 0, 0.432); */
+  background-color: rgba(0, 0, 0, 0.432);
   width: 100%;
   position: absolute;
   top: 0;
@@ -331,6 +331,9 @@ background-color: #1f1f1f;
 .header-fixed {
   position: fixed;
   top: 0;
+  width: 95%;
+  background-color: rgba(0, 0, 0, 0.733);
+  z-index: 999;
 }
 
 .nav__link, .sub-nav__link {
