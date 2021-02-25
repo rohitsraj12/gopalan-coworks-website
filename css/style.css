@@ -241,7 +241,7 @@ p {
 }
 
 .scroll .container {
-  margin: 100px auto;
+  margin: 0px auto;
 }
 
 .hide {
@@ -923,7 +923,8 @@ background-color: #1f1f1f;
   font-weight: 400;
   color: var(--color-text-1);
   text-transform: capitalize;
-  padding-top: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .amenity__detail {
