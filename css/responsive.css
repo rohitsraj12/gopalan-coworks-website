@@ -140,7 +140,7 @@
   .fixed__bottom {
     position: fixed;
     top: 40%;
-    right:-85px;
+    right:-136px;
     color: #fff;
     font-size: 30px;
     transform: rotate(-90deg);
@@ -160,21 +160,33 @@
     font-family: var(--font-primary);
     font-size: 0.9rem;
     line-height: 20px;
-    color:#fff;
+    color:rgb(255, 255, 255);
     font-weight: 400;
     letter-spacing: 0.5px;
   }
+  
+
+  .fixed__bottom a:hover {
+    color:rgb(209, 209, 209);
+
+  }
 
   .fixed__bottom .whats__app {
-    background-color: #24cd63;
+    padding-right: 20px;
+    padding-left: 20px;
+    background-color: #36b363;
   }
 
   .fixed__bottom ul li:first-child {
-    background-color:  #F00;
+    background-color:  rgb(216, 57, 57);
+    padding-right: 20px;
+    padding-left: 20px;
   }
 
   .fixed__bottom ul li:last-child {
     background-color: #032f71;
+    padding-right: 20px;
+    padding-left: 20px;
   }
  
   .hide {
