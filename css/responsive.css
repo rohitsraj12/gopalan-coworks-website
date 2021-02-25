@@ -274,6 +274,29 @@
       margin-left: 20px;
     }
 
+    .location__contact li{
+      padding-bottom: 0;
+      margin-bottom: 0;
+    }
+
+    
+
+    .location__contact li span:first-child {
+      width:170PX;
+      display: inline-block;
+      border-right: 1px solid #252525;
+      margin-right: 20px;
+    }
+    
+    /* .location__contact li span:first-child::after {
+      padding-left: 10px;
+      content: '|';
+    } */
+    
+    .location__contact li a {
+      margin: 0px;
+    }
+
   }
 
 @media (min-width: 992px) {
