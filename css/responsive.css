@@ -140,7 +140,7 @@
   .fixed__bottom {
     position: fixed;
     top: 40%;
-    right:-88px;
+    right:-85px;
     color: #fff;
     font-size: 30px;
     transform: rotate(-90deg);
@@ -157,9 +157,12 @@
   .fixed__bottom a {
     display: inline-block;
     padding: 10px 10px;
-    font-size: 1rem;
+    font-family: var(--font-primary);
+    font-size: 0.9rem;
+    line-height: 20px;
     color:#fff;
     font-weight: 400;
+    letter-spacing: 0.5px;
   }
 
   .fixed__bottom .whats__app {
