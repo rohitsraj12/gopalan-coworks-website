@@ -4,6 +4,11 @@ $(document).ready(function(){
     
     if(mediaQuery < 574){
         // console.log("mobile device style");
+        
+        // hamberger mobile navigation
+        $("#hamberger").click(function(){
+            $("#header-nav").slideToggle();
+        })
 
         $(".footer__fixed").addClass("hide");
 
@@ -44,7 +49,6 @@ $(document).ready(function(){
         // console.log("tab device style");
         $(".footer__fixed").addClass("hide");
 
-
         // fixed load after 1000px scroll
         $(window).scroll(function () {
             var height = $(window).height();
@@ -58,8 +62,6 @@ $(document).ready(function(){
             $(".footer__fixed").addClass("hide");
             }
         });
-
-        
 
     } else {
         console.log("large device style");
@@ -81,6 +83,26 @@ $(document).ready(function(){
                 // afterRender:function() {}
             });
         });
+
+        $(window).scroll(function () {
+            var height = $(window).height();
+        
+            if ($(window).scrollTop() > 800) {
+                // after scroll 800px show hamberger
+                $('.hamberger').css('display', 'block');
+
+                $(".hamberger").click(function(){
+                    $("#body-header").addClass('body__header__scroll');
+                    $("#body-header").removeClass('body__header');
+                    // alert(0);
+                })
+            } else {
+                // lesser then 800px hide hamberger
+                $('.hamberger').css('display', 'none');
+                $("#body-header").removeClass('body__header__scroll');
+                $("#body-header").addClass('body__header');
+            }
+        });
     }
 
 
@@ -92,12 +114,16 @@ $(document).ready(function(){
         var height = $(window).height();
     
         if ($(window).scrollTop() > 800) {
-        //   console.log("hi");
+          console.log("hi");
           $(".fixed__bottom").removeClass("hide");
-    
+            
+        //   $('.hamberger').css('display', 'block')
         } else {
-        //   console.log("hello");
+          console.log("hello");
           $(".fixed__bottom").addClass("hide");
+            
+        // $('.hamberger').css('display', 'none')
+
         }
     });
 })
