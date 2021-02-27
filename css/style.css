@@ -63,11 +63,11 @@ p {
   font-weight: 300;
 }
 
-/* ********************* 
+/*====================== 
 *
-*   default styling 
+*   #default styling 
 *
-* ***********************/
+========================*/
 .py-60 {
   padding: 60px 0;
 }
@@ -80,7 +80,6 @@ p {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  
 }
 
 .body__wrap {
@@ -110,7 +109,6 @@ p {
   font-family: var(--font-primary);
   font-size: 1rem;
   font-weight: 300;
-  /* text-transform: capitalize; */
   position: relative;
   color: var(--color-text-2);
   line-height: 1.5;
@@ -140,26 +138,30 @@ p {
   color: #bbbbbb;
 }
 
-/* #button styling */
+/*  #button styling 
+====================================*/
 .btn__primary {
-  padding: 6px 18px;
-  background-color: rgba(0,0,0,0.3);
   border: 1px solid var(--color-theme);
+  background-color: rgba(0,0,0,0.3);
+  padding: 6px 18px;
+  box-shadow: 0 0 10px rgba(224, 224, 224, 0.2);
+
   color: var(--color-theme);
   font-size: 1rem;
   border-radius: 3px;
   text-transform: capitalize;
+  text-shadow: 0 0 30px rgba(238, 238, 238, 0.5);
+
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   -ms-border-radius: 3px;
   -o-border-radius: 3px;
+
   transition:300ms ;
   -webkit-transition:300ms ;
   -moz-transition:300ms ;
   -ms-transition:300ms ;
   -o-transition:300ms ;
-  box-shadow: 0 0 10px rgba(224, 224, 224, 0.2);
-  text-shadow: 0 0 30px rgba(238, 238, 238, 0.5);
 }
 
 .btn__primary:hover {
@@ -173,8 +175,18 @@ p {
 .btn__link {
   color: var(--color-theme);
   text-transform: capitalize;
+  transition: 300ms;
+  -webkit-transition: 300ms;
+  -moz-transition: 300ms;
+  -ms-transition: 300ms;
+  -o-transition: 300ms;
 }
 
+.btn__link:hover{
+  opacity: 0.7;
+  color: var(--color-theme);
+}
+/* 
 .primary-btn {
   font-family: var(--font-primary);
   background-color: #111111;
@@ -226,7 +238,7 @@ p {
  background-color: var(--color-theme);
  border: 1px solid transparent;
  color: #fff;
-}
+} */
 
 .header-fixed {
   position: fixed;
@@ -241,7 +253,8 @@ p {
 }
 
 .scroll .container {
-  margin: 0px auto;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .hide {
@@ -742,7 +755,7 @@ background-color: #1f1f1f;
   -o-border-radius: 4px 4px ;
 }
 
-.section__faq-header {
+.section__faq-header, .section__privacy-header {
   margin-bottom: 20px;
   font-family: var(--font-primary);
   font-size: 1.5em;
@@ -788,7 +801,7 @@ background-color: #1f1f1f;
   cursor: pointer;
 }
 
-.faq__header h4 {
+.faq__header h4, .privacy__header h4 {
   font-family: var(--font-primary);
   font-size: 1.1em;
   font-weight: 300;
@@ -809,14 +822,19 @@ background-color: #1f1f1f;
   color: rgb(201, 201, 201);
 }
 
-.faq__ans {
+.faq__ans{
   display: none;
   margin: 0 20px;
   padding: 15px 25px;
   border-top:1px solid rgb(54, 54, 54);
 }
 
-.faq__ans p {
+.privacy__ans {
+  /* margin: 0 20px; */
+  padding: 10px 0px;
+}
+
+.faq__ans p, .privacy__ans p,  .privacy__ans ul li{
   font-family: var(--font-primary);
   font-size: 1em;
   font-weight: 300;
@@ -1313,6 +1331,31 @@ background-color: #1f1f1f;
   #website home page
 
 ===============================================*/
+
+
+
+/* #section our story
+=============================================== */
+
+
+/* #why gopalan coworks
+=============================================== */
+.section__video {
+  width: 100%;
+}
+
+/* #choose location
+=============================================== */
+
+
+/* #choose amenity
+=============================================== */
+
+
+/* #choose testimonial
+=============================================== */
+
+
 .highlight__article {
   margin-top: 60px;
   background-color: #111111;
@@ -1333,25 +1376,6 @@ background-color: #1f1f1f;
   font-size: 1.4rem;
   color: var(--color-theme);
 }
-
-/* .section__hightlight .row div:first-child article{
-  background-color:#0faf8d;
-}
-
-
-.section__hightlight .row div:nth-child(2) article{
-  background-color:#dbd337;
-}
-
-.section__hightlight .row div:first-child article{
-  background-color:#0faf8d;
-}
-
-
-.section__hightlight .row div:nth-child(2) article{
-  background-color:#dbd337;
-} */
-
 
 .highlight__article header {
   padding-bottom: 20px;
@@ -1389,7 +1413,6 @@ background-color: #1f1f1f;
 .location__slider header {
   padding: 0 20px 5px;
 }
-
 
 .home__location-header-link {
   padding-bottom: 10px;
