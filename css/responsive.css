@@ -12,70 +12,31 @@
   --font-primary: "Rubik", sans-serif;
 }
 
-@media (max-width: 768px) {
-  /* .d-banner {
-    display: none;
-  } */
 
-  .body__header {
-      background-color: rgba(0, 0, 0, 0.836);
-  }
-
-  .header__brand img {
-    height: 50px;
-  }
-  .section__location .section__header,  .section__testimonial .section__header .section__space .section__header, .section__amenities .section__header {
-    margin-bottom: 50px;
-  }
-  .section__header::after {
-    left: 44%;
-  }
+@media(max-width: 768px){
+  
+  /*====================== 
+  *
+  *   #default styling
+  *
+  ========================*/
   .sm-hide {
     display: none;
   }
 
-  .header__brand {
-    padding: 20px 10px 10px;
-    /* text-align: center; */
+  .move-right {
+    align-items: right;
   }
 
-  .header__brand img{
-    /* text-align: center; */
-  }
+  /*====================== 
+  *
+  *   #body header
+  *
+  ========================*/
 
-  .header__nav {
-    margin: 10px 10px;
-    display: none;
+  .body__header {
+    background-color: rgba(0, 0, 0, 0.836);
   }
-
-  .nav__link {
-    display: block;
-    padding: 7px 0 5px 5px;
-    border-bottom: 1px solid #525252;
-    position: relative;
-  }
-
-  .nav__link i {
-    position: absolute;
-    right: 2%;
-    font-size: 24px;
-  }
-
-  .nav__link > .nav-btn {
-    display: none;
-  }
-  
-  .sub-nav__link {
-    margin: 0 0 0 15px;
-    padding: 10px ;
-    display: block;
-    border-bottom: 1px solid #525252;
-  }
-
-  .nav__link:hover, .sub-nav__link:hover  {
-    color: #fe6600;
-  }
-
   .hamberger {
     background-color: transparent;
     border: none;
@@ -86,11 +47,63 @@
     padding: 0;
     z-index: 999;
   }
-  
   .hamberger i{
     display: none;
-   }
+  }
 
+  /* header logo
+  ========================================*/
+  .header__brand img {
+    height: 50px;
+  }
+  .header__brand {
+    padding: 20px 10px 10px;
+  }
+
+  /* header naviagtion
+  ========================================*/
+  .header__nav {
+    margin: 10px 10px;
+    display: none;
+  }
+  .nav__link {
+    display: block;
+    padding: 7px 0 5px 5px;
+    border-bottom: 1px solid #525252;
+    position: relative;
+  }
+  .nav__link i {
+    position: absolute;
+    right: 2%;
+    font-size: 24px;
+  }
+  .nav__link > .nav-btn {
+    display: none;
+  }
+  .sub-nav__link {
+    margin: 0 0 0 15px;
+    padding: 10px ;
+    display: block;
+    border-bottom: 1px solid #525252;
+  }
+  .nav__link:hover, .sub-nav__link:hover  {
+    color: #fe6600;
+  }
+  
+  /*====================== 
+  *
+  *   #body container 
+  *
+  ========================*/
+  .section__location .section__header,  .section__testimonial .section__header .section__space .section__header, .section__amenities .section__header {
+    margin-bottom: 50px;
+  }
+
+}
+
+/* development mode*/
+
+@media (max-width: 768px) {
   .line {
     fill: none;
     stroke: rgb(224, 224, 224);
