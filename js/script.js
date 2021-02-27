@@ -1,25 +1,21 @@
 $(document).ready(function(){
 
     // document.getElementsByClassName("banner__video").controls = true;
-
+    //sub navigation slider 
     $(".nav__list").click(function(){
       $(this).find(".sub__nav").slideToggle();
     });
 
-
-
-    var wrap = $("#body-header");
-
-    wrap.on("scroll", function(e) {
+    // var wrap = $("#body-header");
+    // wrap.on("scroll", function(e) {
     
-      if (this.scrollTop > 200) {
-        wrap.addClass("fix-search");
-      } else {
-        wrap.removeClass("fix-search");
-      }
-    });
+    //   if (this.scrollTop > 200) {
+    //     wrap.addClass("fix-search");
+    //   } else {
+    //     wrap.removeClass("fix-search");
+    //   }
+    // });
 
-    
     // scroll down fixed body header 
       // $(window).scroll(function() {    
       //     var scroll = $(window).scrollTop();
@@ -37,33 +33,93 @@ $(document).ready(function(){
       //     }
       // });
 
-      
-    $(".close").click(function(){
-        $(".modal").fadeOut(400);
-        $(".form__wrap").fadeOut(400);
+    /* *******************************
+
+      #locations page gallery section 
+
+      - location page form close button
+      - location form hide and show
+
+   ********************************** */ 
+    // location page form close button
+    // $(".close").click(function(){
+    //     $(".modal").fadeOut(400);
+    //     $(".form__wrap").fadeOut(400);
+    // });
+
+    // $(".show__phone").click(function(){
+    //     $(".modal").fadeIn(400);
+    // });
+
+    // location form hide and show
+    $('#show-form').click(function(){
+      $('.gallery__form-wrap').toggleClass('form__hide');
     });
 
-    $(".show__phone").click(function(){
-        $(".modal").fadeIn(400);
+    // location page form close button
+    $('#btn-close').click(function(){
+      $('.gallery__form-wrap').toggleClass('form__hide');
+    });
+    
+
+
+    /**************************************
+     * 
+     *  faq toggle section
+     * 
+    ************************************* */
+   // faq toggle
+    $('.faq__header').click(function(){
+      $('.faq__ans').slideUp(300);
+      $(this).parent().find('.faq__ans').slideDown(300);
+      $('.fa-angle-down').css('transform', 'rotate(0deg)');
+      $(this).parent().find('.fa-angle-down').css('transform', 'rotate(180deg)');
     });
 
 
+    /*****************************************
+    * 
+    *   google review read more and less iems
+    * 
+    **************************************** */ 
 
-  // owl slider
-    var $owl = $('.section__location .owl-carousel');
-
-    $owl.children().each( function( index ) {
-      $(this).attr( 'data-position', index ); // NB: .attr() instead of .data()
+    // google review read more button
+    $(".load__review-btn > .btn__link").click(function(){
+      $(".load__review").removeClass('hide');
+      $(this).text('Load Less..');
+      $(this).parent().removeClass('load__review-btn');
+      $(this).parent().addClass('less__review-btn');
     });
 
-    $owl.owlCarousel({
-      center: true,
-      loop: true,
-      items: 3,
-      autoplay: true,
-      autoplayTimeout: 2000,
-      autoplayHoverPause: true,
-      responsive:{
+
+    /* **********************************
+    
+      #slider
+      - 1 home page location slider
+      - 2 testimonial slider
+    
+    ************************************ */ 
+
+    /***************************************
+   * 
+   *  #home page location slider
+   *  - large screen 
+   *      2 images visible
+   *      right side scroll button
+   *     
+   *  - small screen
+   *      1 image visible
+   *
+   ************************************** */   
+  $('.section__location-slider .owl-carousel').owlCarousel({
+    stagePadding: 1,
+    loop:true,
+    margin:20,
+    nav:true,
+    animateOut: 'slideOutUp',
+    animateIn: 'slideInUp',
+    navText:["<div class='d-none nav-btn prev-slide'></div>","<div class='nav-btn next-slide'><span class='link__icon'>&#8594;</span></div>"],
+    responsive:{
         0:{
             items:1
         },
@@ -71,12 +127,20 @@ $(document).ready(function(){
             items:2
         },
         1000:{
-            items:3
+            items:2.3
         }
     }
-    });
+  })
+
+  $('.owl-carousel').find('.owl-nav').removeClass('disabled');
+  $('.owl-carousel').on('changed.owl.carousel', function(event) {
+    $(this).find('.owl-nav').removeClass('disabled');
+  });
+
+  // -------------------------------------------------------------------------
 
     
+    // 2nd slider testimonial
     var $owl = $('.section__testimonial .owl-carousel');
 
     $owl.children().each( function( index ) {
@@ -119,30 +183,38 @@ $(document).ready(function(){
       $('.community__front > .gallery__block').toggleClass('gallery__block-body');
     });
 
-    // location form hide and show
-    $('#show-form').click(function(){
-      $('.gallery__form-wrap').toggleClass('form__hide');
-    })
+  // ---------------------------------------------------------------------------------
+  
+  
+  // 3slider
+    var $owl = $('.section__location .owl-carousel');
 
-    $('#btn-close').click(function(){
-      $('.gallery__form-wrap').toggleClass('form__hide');
-    })
-
-    // faq toggle section
-    $('.faq__header').click(function(){
-      $('.faq__ans').slideUp(300);
-      $(this).parent().find('.faq__ans').slideDown(300);
-      $('.fa-angle-down').css('transform', 'rotate(0deg)');
-      $(this).parent().find('.fa-angle-down').css('transform', 'rotate(180deg)');
-    })
-
-    // google review read more button
-    $(".load__review-btn > .btn__link").click(function(){
-      $(".load__review").removeClass('hide');
-      $(this).text('Load Less..');
-      $(this).parent().removeClass('load__review-btn');
-      $(this).parent().addClass('less__review-btn');
+    $owl.children().each( function( index ) {
+      $(this).attr( 'data-position', index ); // NB: .attr() instead of .data()
     });
+
+    $owl.owlCarousel({
+      center: true,
+      loop: true,
+      items: 3,
+      autoplay: true,
+      autoplayTimeout: 2000,
+      autoplayHoverPause: true,
+      responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:2
+        },
+        1000:{
+            items:3
+        }
+    }
+    });
+
+
+
 
 
 
