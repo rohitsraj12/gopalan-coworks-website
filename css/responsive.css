@@ -393,6 +393,12 @@
     -webkit-animation: mover 1s infinite  alternate;
     animation: mover 1s infinite  alternate; */
   }
+  
+
+  .google__review {
+    max-height: 60vh;
+    overflow-y: scroll;
+  }
 
 }
 
