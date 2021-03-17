@@ -71,8 +71,8 @@ $(document).ready(function(){
    // faq toggle
     $('.faq__header').click(function(){
       $('.faq__ans').slideUp(300);
-      $(this).parent().find('.faq__ans').slideDown(300);
       $('.fa-angle-down').css('transform', 'rotate(0deg)');
+      $(this).parent().find('.faq__ans').slideToggle(300);
       $(this).parent().find('.fa-angle-down').css('transform', 'rotate(180deg)');
     });
 
