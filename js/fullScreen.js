@@ -30,11 +30,11 @@ $(document).ready(function(){
             var currentScrollPos = window.pageYOffset;
 
             if (prevScrollpos > currentScrollPos) {
-                console.log('up');
+                // console.log('up');
                 $("#body-header").addClass('header-fixed');
                 $("#body-header").removeClass('body__header');
             } else {
-                console.log('down');
+                // console.log('down');
                 $("#body-header").removeClass('header-fixed');
                 $("#body-header").addClass('body__header');
 
@@ -51,11 +51,11 @@ $(document).ready(function(){
             var height = $(window).height();
         
             if ($(window).scrollTop() > height) {
-            console.log("hi");
+            // console.log("hi");
             $(".footer__fixed").removeClass("hide");
         
             } else {
-            console.log("hello");
+            // console.log("hello");
             $(".footer__fixed").addClass("hide");
             }
         });
@@ -108,12 +108,12 @@ $(document).ready(function(){
         var height = $(window).height();
     
         if ($(window).scrollTop() > 800) {
-          console.log("hi");
+        //   console.log("hi");
           $(".fixed__bottom").removeClass("hide");
             
         //   $('.hamberger').css('display', 'block')
         } else {
-          console.log("hello");
+        //   console.log("hello");
           $(".fixed__bottom").addClass("hide");
             
         // $('.hamberger').css('display', 'none')
@@ -121,9 +121,6 @@ $(document).ready(function(){
         }
     });
 })
-
-
-
 
 /***************************************
  * 
