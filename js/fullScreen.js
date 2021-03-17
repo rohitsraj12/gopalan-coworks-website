@@ -1,7 +1,6 @@
 $(document).ready(function(){
     const mediaQuery = window.innerWidth;
 
-    
     if(mediaQuery < 574){
         // console.log("mobile device style");
         
@@ -42,8 +41,6 @@ $(document).ready(function(){
             }
             prevScrollpos = currentScrollPos;
         }
-
-
 
     } else if ((mediaQuery < 768)){
         // console.log("tab device style");
@@ -92,10 +89,10 @@ $(document).ready(function(){
                 $('.hamberger').css('display', 'block');
 
                 $(".hamberger").click(function(){
-                    $("#body-header").addClass('body__header__scroll');
-                    $("#body-header").removeClass('body__header');
+                    $("#body-header").toggleClass('body__header__scroll');
+                    // $("#body-header").removeClass('body__header');
                     // alert(0);
-                })
+                },2000)
             } else {
                 // lesser then 800px hide hamberger
                 $('.hamberger').css('display', 'none');
@@ -104,9 +101,6 @@ $(document).ready(function(){
             }
         });
     }
-
-
-    
 
 
     // fixed load after 1000px scroll
