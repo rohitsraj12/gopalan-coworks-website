@@ -103,7 +103,6 @@ $(document).ready(function(){
         });
     }
 
-
     // fixed load after 1000px scroll
     $(window).scroll(function () {
         var height = $(window).height();
