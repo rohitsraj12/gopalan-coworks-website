@@ -89,10 +89,11 @@ $(document).ready(function(){
                 $('.hamberger').css('display', 'block');
 
                 $(".hamberger").click(function(){
-                    $("#body-header").toggleClass('body__header__scroll');
-                    // $("#body-header").removeClass('body__header');
+                    $("#body-header").addClass('body__header__scroll');
+                    $("#body-header").removeClass('body__header');
                     // alert(0);
-                },2000)
+                })
+                
             } else {
                 // lesser then 800px hide hamberger
                 $('.hamberger').css('display', 'none');
