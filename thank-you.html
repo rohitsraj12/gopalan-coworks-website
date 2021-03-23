@@ -33,6 +33,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/responsive.css">
+        <link rel="stylesheet" href="css/home-2.css">
     </head>
     <body>
         
@@ -44,24 +45,35 @@
                         <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
                         <path class="line line2" d="M 20,50 H 80" />
                         <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
-                      </svg>
+                    </svg>
                 </div>
 
                 <header class="wrap__container">
-                    <div class="header__brand">
+                    <div class="header__brand" data-aos="fade-down" data-aos-duration="1000">
                         <a href="index.html">
                             <img src="img/brand/Logo-1.png" class="d-banner-image" alt="Gopalan Coworks Logo">
                             <img src="img/brand/Logo-1-sm.png" class="m-banner-image" alt="Gopalan Coworks Logo">
                         </a>
                     </div>
                     <!-- end header brand -->
-                    <nav class="header__nav" id="header-nav">
+                    <nav class="header__nav" id="header-nav" data-aos="fade-down" data-aos-duration="1000">
                         <ul>
                             <li class="nav__list"><a href="index.html" class="nav__link">Home</a></li>
-                            <!-- <li class="nav__list"><a href="#location" class="nav__link">Locations</a></li>
-                            <li class="nav__list"><a href="#amenity" class="nav__link">Amenities</a></li>
-                            <li class="nav__list"><a href="#testimonial" class="nav__link">Testimonials</a></li>
-                            <li class="nav__list"><a href="" class="nav__link">Contact Us</a></li> -->
+                            <li class="nav__list"><a class="nav__link">Locations <i class="fa fa-angle-down pl-2" aria-hidden="true"></i></a>
+                                <div class="sub__nav">
+                                    <ul>
+                                        <li class="sub-nav__list"><a href="location/banashankari.html" class="sub-nav__link">Banashankari</a></li>
+                                        <li class="sub-nav__list"><a href="location/bannerghatta_road.html" class="sub-nav__link">Bannerghatta Road</a></li>
+                                        <li class="sub-nav__list"><a href="location/brookefield.html" class="sub-nav__link">Brookefield</a></li>
+                                        <li class="sub-nav__list"><a href="location/commercial_street.html" class="sub-nav__link">Commercial Street</a></li>
+                                        <li class="sub-nav__list"><a href="location/old_madras_road.html" class="sub-nav__link">Old Madras Road</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav__list"><a href="about_us.html" class="active__nav nav__link">About Us</a></li>
+                            <li class="nav__list"><a href="community.html" class="nav__link">Community</a></li>
+                            <li class="nav__list"><a href="contact_us.html" class="nav__link">Contact Us</a></li>
+                            <li class="nav__list"><a href="" class="nav__link nav-btn" data-toggle="modal" data-target="#quote">Get A Quote</a></li>
                         </ul>
                     </nav>
                     <!-- end header nav -->
@@ -69,18 +81,53 @@
             </div>
             <!-- end body header -->
 
-            <div class="body__banner">
+            <div class="scroll body__banner full__banner">
+                
                 <div class="banner__wrap">
-                        <!-- <img src="" alt="gopalan coworks"> -->
-                        <!-- 
-                            src = 
-                            srcset = o to 574px, 575 to 2000
-                         -->
-                     <img src="img/banner/banner-4.jpg" alt="" class="d-banner-image">
-                     <img src="img/banner/banner-1-sm.jpg" alt="" class="m-banner-image">
-                         <!-- <img src="img/banner/banner-1-sm.jpg" alt="" class="m-banner"> -->
-                        <!-- <img width="100%" src="img/banner/banner-1-sm.jpg" srcset="img/banner/banner-1-sm.jpg 768w, img/banner/banner-1.jpg 2000w" alt="Gopalan Aqua Project"> -->
-    
+                    <!-- <img src="" alt="gopalan coworks"> -->
+                    <!-- 
+                        src = 
+                        srcset = o to 574px, 575 to 2000
+                     -->
+                     <img src="img/banner/office_for_rent_bangalore.jpg" alt="coworking office for rent bangalore" class="d-banner-image" data-aos="zoom-in-up" data-aos-duration="1000">
+                     <img src="img/banner/office_for_rent_bangalore-sm.jpg" alt="coworking office for rent bangalore" class="m-banner-image">
+                    <section class="banner__container">
+                        <article>
+                            <header data-aos="zoom-in-up" data-aos-duration="1500">
+                                <h2>
+                                    Thank you <i class="fa fa-circle pl-2" aria-hidden="true"></i> 
+                                </h2>
+                            </header>
+                            <!-- <h4  data-aos="fade-right" data-aos-duration="3000">
+                                We have received your enquiry. Our team will get back to you soon.
+                            </h4>
+                             -->
+                        </article>
+                    </section>
+                </div>
+
+                <div class="top__social-media">
+                    <ul>
+                        <li data-aos="fade-up" data-aos-duration="2000">
+                            <a href="https://www.facebook.com/gopalancoworks/" target="_blank"><i class="fa fa-facebook-f"></i></a>
+                            <span class="hover__state">facebook</span>
+                        </li>
+                        <li data-aos="fade-up" data-aos-duration="2000">
+                            <a href="https://twitter.com/gopalancoworks" target="_blank"><i class="fa fa-twitter"></i></a>
+                            <span class="hover__state">twitter</span>
+
+                        </li>
+                        <li data-aos="fade-up" data-aos-duration="2000">
+                            <a href="https://www.instagram.com/gopalancoworks/" target="_blank"><i class="fa fa-instagram"></i></a>
+                            <span class="hover__state">instagram</span>
+
+                        </li>
+                        <li data-aos="fade-up" data-aos-duration="2000">
+                            <a href="https://in.linkedin.com/company/gopalan-coworks" target="_blank"><i class="fa fa-linkedin"></i></a>
+                            <span class="hover__state">linked in</span>
+
+                        </li>
+                    </ul>
                 </div>
 
             </div>
