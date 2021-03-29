@@ -24,6 +24,6 @@ if(isset($_POST['email'])){
 
     mail($to, $subject, $message, $headers);
 
-    header("location:thank-you.html");
+    header("location:thank-you");
 }
 ?>
