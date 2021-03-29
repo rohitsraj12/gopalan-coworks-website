@@ -1,0 +1,48 @@
+
+# mod_rewrite start here
+RewriteEngine On
+
+# does not apply to existing directories, meand that if the folder exists on the server then dont change anything and dont run the rules
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# check for file in the directory with .html extention
+RewriteCond %{REQUEST_FILENAME}\.html -f
+
+# here we actually show the page that has the .html extention
+RewriteRule ^(.*)$ $1.html [NC,L]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteRule ^([^.]+)$ $1.html [NC,L]
+
+
+#RewriteRule ^index$ index.html [L]
+#RewriteRule ^about_us$ about_us.html [L]
+#RewriteRule ^community$ community.html [L]
+#RewriteRule ^contact_us$ contact_us.html [L]
+#RewriteRule ^thank-you$ thank-you.html [L]
+
+
+
+
