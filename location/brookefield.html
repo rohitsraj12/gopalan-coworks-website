@@ -486,7 +486,7 @@
                                                 </ul>
 
                                                 <div class="buton">
-                                                    <button class="btn__primary"  data-toggle="modal" data-target="#general">
+                                                    <button class="btn__primary price__quote" data-toggle="modal" data-target="#quote" data-price-type="Flexible Desk">
                                                         get quote
                                                     </button>
 
@@ -525,7 +525,7 @@
                                                 </ul>
 
                                                 <div class="buton">
-                                                    <button class="btn__primary"  data-toggle="modal" data-target="#general">
+                                                    <button class="btn__primary price__quote" data-toggle="modal" data-target="#quote" data-price-type="Dedicated Desk">
                                                         get quote
                                                     </button>
 
@@ -566,7 +566,7 @@
                                                 </ul>
 
                                                 <div class="buton">
-                                                    <button class="btn__primary"  data-toggle="modal" data-target="#general">
+                                                    <button class="btn__primary price__quote" data-toggle="modal" data-target="#quote" data-price-type="Private Cabin">
                                                         get quote
                                                     </button>
 
@@ -609,7 +609,7 @@
                                                 </ul>
 
                                                 <div class="buton">
-                                                    <button class="btn__primary"  data-toggle="modal" data-target="#general">
+                                                    <button class="btn__primary price__quote"  data-toggle="modal" data-target="#quote"  data-price-type="Large Office">
                                                         get quote
                                                     </button>
 
@@ -1449,7 +1449,7 @@
                 <div class="modal-dialog modal-dialog-centered ">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" id="staticBackdropLabel">Get Quote</h5>
+                            <h5 class="modal-title" id="price-quote">Get Quote</h5>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                             </button>
@@ -1471,17 +1471,6 @@
                                     <label for="email">Email address</label>
                                     <input type="email" class="form-control" name="email"  id="email"  placeholder="Your email" aria-describedby="emailHelp">
                                 </div>
-                                <div class="form-group">
-                                <label for="email">Your Location</label>
-                                    <select name="location" class="form-control" id="exampleFormControlSelect1">
-                                    <option>Select Your Locaton</option>
-                                    <option value="Banashankari" >Banashankari</option>
-                                    <option value="Bannerghatta road">Bannerghatta Road</option>
-                                    <option value="Brooke Field">Brookefield</option>
-                                    <option value="Commercial Street">Commercial Street</option>
-                                    <option value="Old Madras Road">Old Madras Road</option>
-                                    </select>
-                                </div>
                                 
                                 <div class="form-group">
                                     <label for="seats">Number Of Seats</label>
@@ -1495,8 +1484,10 @@
                                     </select>
                                 </div>
                                 
+                                <input type="hidden" name="location" value="Brookefield" id="input-location">
+                                
                                 <!-- enter form type -->
-                                <input type="hidden" name="enquire" value="Get Quote">
+                                <input type="hidden" name="enquire" value="Get Quote" id="input-price">
                                 <div class="text-center">
                                     <input type="submit" name="submit" class="btn__primary">
                                 </div>
@@ -1506,8 +1497,9 @@
                 </div>
             </div>
             <!-- end model quote form -->
-            </div>
-            <!-- end model general form -->
+
+        </div>
+        <!-- end model general form -->
 
         <!-- script -->
          <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
