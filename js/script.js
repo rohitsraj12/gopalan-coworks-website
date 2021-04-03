@@ -78,6 +78,23 @@ $(document).ready(function(){
 
     /*****************************************
     * 
+    *   Price type capture and pass data in form
+    * 
+    **************************************** */ 
+    $('.price__quote').click(function(){
+      var catchPriceType = $(this).attr("data-price-type");
+      // var catchLocation = $(this).attr("data-location");
+
+      $('#price-quote').text(catchPriceType);
+      $('#input-price').val(catchPriceType);
+      console.log(catchPriceType);
+      // console.log(catchLocation);
+    })
+
+    // $('.price__quote').hide();
+
+    /*****************************************
+    * 
     *   google review read more and less iems
     * 
     **************************************** */ 
