@@ -14,7 +14,7 @@
 
 
 @media(max-width: 768px){
-  
+
   /*====================== 
   *
   *   #default styling
@@ -28,6 +28,10 @@
     align-items: right;
   }
 
+  .height_100 {
+    padding: 20px 0 30px;
+  }
+
   /*====================== 
   *
   *   #body header
@@ -37,6 +41,7 @@
   .body__header {
     background-color: rgba(0, 0, 0, 0.836);
   }
+
   .hamberger {
     background-color: transparent;
     border: none;
@@ -92,6 +97,16 @@
   
   /*====================== 
   *
+  *   #body banner 
+  *
+  ========================*/
+
+  .body__banner {
+    margin-bottom: 40px;
+  }
+  
+  /*====================== 
+  *
   *   #body container 
   *
   ========================*/
@@ -104,6 +119,7 @@
 /* development mode*/
 
 @media (max-width: 768px) {
+  
   .line {
     fill: none;
     stroke: rgb(224, 224, 224);
@@ -153,6 +169,10 @@
   .section__image-gallery {
     padding: 0;
   }
+
+  .highligh__article {
+    padding: 10px 0;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1000px){
@@ -162,6 +182,11 @@
 }
 
 @media (min-width: 769px) {
+  
+
+  .height_100 {
+    height: 100vh;
+  }
   
   /* #fixed enquire, whats app and call buttons 
   ======================================================= */
