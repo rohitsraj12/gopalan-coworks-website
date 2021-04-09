@@ -6,6 +6,7 @@ $(document).ready(function(){
       $(this).find(".sub__nav").slideToggle();
     });
 
+
     // var wrap = $("#body-header");
     // wrap.on("scroll", function(e) {
     
@@ -128,12 +129,12 @@ $(document).ready(function(){
    *
    ************************************** */   
   $('.section__location-slider .owl-carousel').owlCarousel({
-    stagePadding: 1,
+    // stagePadding: 1,
     loop:true,
     margin:20,
     nav:true,
-    animateOut: 'slideOutUp',
-    animateIn: 'slideInUp',
+    // animateOut: 'slideOutUp',
+    // animateIn: 'slideInUp',
     navText:["<div class='d-none nav-btn prev-slide'></div>","<div class='nav-btn next-slide'><span class='link__icon'>&#8594;</span></div>"],
     responsive:{
         0:{
