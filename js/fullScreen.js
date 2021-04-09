@@ -4,6 +4,9 @@ $(document).ready(function(){
     if(mediaQuery < 574){
         // console.log("mobile device style");
         
+        //hide scroll class from mobile device
+        $('section').removeClass('scroll');
+        
         // hamberger mobile navigation
         $("#hamberger").click(function(){
             $("#header-nav").slideToggle();
@@ -43,6 +46,11 @@ $(document).ready(function(){
         }
 
     } else if ((mediaQuery < 768)){
+        
+        //hide scroll class from mobile device
+        $('section').removeClass('scroll');
+
+        
         // console.log("tab device style");
         $(".footer__fixed").addClass("hide");
 
