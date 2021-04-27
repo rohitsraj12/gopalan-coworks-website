@@ -9,7 +9,7 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}\.html -f
 
 # here we actually show the page that has the .html extention
-RewriteRule ^(.*)$ $1.html [NC,L]
+#RewriteRule ^(.*)$ $1.html [NC,L]
 
 
 
