@@ -376,10 +376,12 @@ a:hover {
   font-size: 17px;
   font-weight: 400;
   padding: 8px 20px;
-  border: 1px solid #888888;
+  /* border: 1px solid #888888; */
   text-transform: capitalize;
   color: #d6d6d6;
-  background-color: rgb(41, 41, 41);
+  /* background-color: rgb(41, 41, 41); */
+  background-color: var(--color-theme);
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
 }
 
 .body__container {
