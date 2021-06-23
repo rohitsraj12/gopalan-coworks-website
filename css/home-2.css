@@ -52,7 +52,6 @@
 /* section styling */
 .body__banner {
   position: relative;
-  height: 100vh;
 }
 
 .banner__video {
@@ -91,11 +90,13 @@
 
 .body__banner img {
   width: 100%;
+}
+
+.d-banner-image {
   height: 100vh;
 }
 
 .body__banner {
-  height: 80vh;
   display: flex;
   flex-direction: column;
 }
