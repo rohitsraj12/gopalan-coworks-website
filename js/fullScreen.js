@@ -49,6 +49,7 @@ $(document).ready(function(){
         
         //hide scroll class from mobile device
         $('section').removeClass('scroll');
+        // $('.body__banner').removeClass('scroll');
 
         
         // console.log("tab device style");
